@@ -1,0 +1,550 @@
+.content
+{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.section1
+{
+    background-image: url('../images/imgListas/bg1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.leftSide
+{
+    flex-direction: column;
+    margin-left: 5vh;
+    width: 50%;
+    /* background: #000; */
+}
+
+.section1 h1
+{
+    position: relative;
+    margin-top: 100px;
+    margin-left: 3.5vh;
+    padding: 1vh 5vh;
+    font-size: 3vh;
+    width: fit-content;
+    background: #0c0479;
+    border-radius: 1vh;
+}
+
+.section1 p
+{
+    position: relative;
+    left: -5vh;
+    font-size: 25px;
+    width: 110%;
+    padding: 3vh;
+    border-radius: 3vh;
+    background: #00000079;
+
+}
+.shelfImg
+{
+    position: relative;
+    margin: 2vh 10vh;
+    width: 70vh;
+}
+
+.rightSide
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background: #000; */
+    width: 50%;
+}
+
+.sliderList
+{
+    width: 100%;
+    overflow: hidden;
+    /* background: #000; */
+    height: 100vh;
+    
+
+}
+
+.container
+{
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    /* transition: 1s ease-in-out; */
+}
+
+.sliderList img
+{
+    border-radius: 100%;
+    object-fit: cover;
+    margin: .5vh auto;
+
+}
+
+.minWidthSliders
+{
+    width: 1vh;
+    filter: blur(0.5px);
+    opacity: .5;
+
+}
+
+.maxWidthSliders
+{
+    width: 12vh;
+    filter: blur(0.5px);
+    opacity: .8;
+    transition: 2s ease-out;
+
+}
+
+.focus
+{
+    box-shadow: 0px 0px 10vh #344069;
+    width: 16vh;
+    filter: blur(0);
+    transition: 2s ease-out;
+}
+
+.section2
+{
+    background-image: url('../images/imgListas/bg2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    height: 200vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title2
+{
+    font-size: 2.5vh;
+    background: #0a2945;
+    text-align: right;
+    width: 100%;
+    padding: 2.5vh 7.5vh;
+    margin-top: 5vh;
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.circleText
+{
+    background: linear-gradient(#00000000, #000000);
+    box-shadow: 7px 8px 5px #000;
+    font-size: 23px;
+    margin-left: 5vh;
+    width: 37vh;
+    height: auto;
+    padding: 5vh;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.leftSide2
+{
+    flex-direction: row;
+    width: 50%;
+}
+
+.rightSide2
+{
+    /* display: flex; */
+    flex-direction: row;
+    height: fit-content;
+    width: 30%;
+    background: #000;
+
+}
+
+.menuList
+{
+    /* display: flex; */
+    flex-direction: row;
+    /* width: 100%; */
+    /* background: #000; */
+    /* margin-right: 50vh; */
+}
+
+.contentSides
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listContent
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline;
+    height: 100vh;
+    z-index: 0;
+}  
+
+.listBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    padding: 15vh 2vh 2vh 2vh;
+    /* background: #ff9595; */
+    margin: auto;
+    border: 1px solid #252E82;
+    border-top: none;
+    border-bottom-left-radius: 2vh;
+    border-bottom-right-radius: 2vh;
+    background: linear-gradient(#252e8200, #252e824d);
+    /* background: #a00000; */
+    /* z-index: 999; */
+
+}
+.itemList
+{
+    width: 15.5vh;
+    /* position: relative; */
+    /* display: flex; */
+    flex-direction: row;
+    /* padding: 1vh; */
+    margin: 1.5vh;
+    border: solid 2px #5669a8;
+    border-radius: 1.5vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 3px 6px #000;
+        /* z-index: 999; */
+
+}
+
+.itemBox
+{
+    /* background: #000; */
+    width: fit-content;
+        /* z-index: 999; */
+
+}
+
+.numb
+{
+    font-size: 20px;
+    position: absolute;
+    background: #002958;
+    padding: .5vh 1.2vh .5vh 1.2vh;
+    box-shadow: 5px 3px 6px #000;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10vh;
+}
+
+.bgList
+{
+    position: relative;
+    z-index: -999;
+    bottom: 60%;
+}
+
+.boxDesc
+{
+    font-size: 25px;
+    width: 50%;
+    background: linear-gradient(#00000000, #000000b9);
+    padding: 7vh;
+    position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    left: 50%;
+    bottom: 110%;
+    border-radius: 5vh;
+}
+
+.titleFilm
+{
+    position: absolute;
+    bottom: 100%;
+    right: 50%;
+    display: flex;
+}
+
+.titleFilm h3
+{
+    color: #99A5BC;
+}
+
+.btnAdd
+{
+    position: relative;
+    padding: 1vh 2vh;
+    box-shadow: 3px 4px 5px #000;
+    font-size: 20px;
+    background: #00691D;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    width: 40%;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+.btnAdd:hover
+{
+    background: #005318;
+    box-shadow: 2px 2px 4px #00000088;
+
+}
+
+.btnRemove
+{
+    position: absolute;
+    bottom: 52%;
+    padding: .2vh 1vh;
+    box-shadow: 1px 2px 4px #000;
+    font-size: 25px;
+    background: #690000;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    border-radius: 5vh;
+    margin-top: 1vh;
+}
+
+.btnRemove:hover
+{
+    background: #4e0000;
+    box-shadow: 2px 2px 4px #00000088;
+
+}
+
+.searchMovie
+{
+    padding: 1vh;
+    display: flex;
+    margin: auto;
+    border-radius: 1vh;
+    font-size: 15px;
+    width: 10vh;
+    margin-top: 1vh;
+
+}
+
+.menuTitulos
+{
+    background: #000000e3;
+    border: #0A2945 1px solid;
+    box-shadow: 5px 7px 10px #000;
+    display: flex;
+    width: 50%;
+    height: 0vh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 55vh;
+    left: 25%;
+    top: -500%;
+    z-index: 999;
+    border-radius: 2vh;
+    transition: 600ms ease-in-out;
+    overflow: auto;
+}
+
+.boxHeader
+{
+    /* background: #000; */
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;  
+}
+
+.myList 
+{
+    display: flex;
+    position: relative;
+    /* margin: -7vh 9.6vh; */
+    /* margin-top: 0; */
+    background: #0A2945;
+    margin: auto 0;
+    padding: 2vh 5vh;
+    font-size: 25px;
+    width: 30vh;
+    height: fit-content;
+    border-top-right-radius: 12vh;
+    border-bottom-right-radius: 12vh;
+}
+
+.botaoVerTitulos
+{
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+    width: 40vh;
+    font-size: 2.5vh;
+    height: fit-content;
+    padding: 2vh 5vh;
+    text-align: left;
+    /* left: 10vh; */
+    background: #00691d;
+    color: #fff;
+    /* margin-top: 6.5vh; */
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+}
+
+.arrowImg
+{
+    position:absolute;
+    display: flex;
+    width: 2.5vh;
+    /* height: 3.5vh; */
+    
+    left: 168vh;
+    bottom: 2.2vh;
+    z-index: 1;
+}
+
+.hiddenMenuList
+{
+    opacity: 0;
+    transition: 600ms ease-in-out;
+    z-index: -1;
+}
+
+.opcoesAdd
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 95%;
+    /* background: #000; */
+    padding: .5vh;
+}
+
+.opcoesAdd button
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+.listAvailable
+{
+    display: flex;
+    width: 12vh;
+    border-radius: .5vh;
+    margin: 1vh;
+}
+
+.name
+{
+    font-size: 20px;
+    position: relative;
+    /* top: .01vh;
+    left: 2vh; */
+    display: flex;
+    /* background: #002958; */
+    padding: 1.2vh;
+    box-shadow: 2px 3px 4px #00000036;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10vh;
+    margin-top: 0.5vh;
+}
+
+.containerAvailable
+{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    /* background: #c4078b; */
+    width: 100%;
+    height: 90vh;
+}
+
+.hiddenOpcoes
+{
+    z-index: 1;
+    background: #000000ea;
+    border-radius: 1vh;
+    position: fixed;
+    width: 30%;
+    border: #002958 solid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    top: 30%;
+    padding: 2vh;
+}
+
+.titleOpc
+{
+    text-align: center;
+    border-radius: 1vh;
+    font-size: 20px;
+    padding: 1vh;
+    width: 100%;
+    background: #002958;
+}
+
+.hiddenInput
+{
+    display: none;
+    /* z-index: -1; */
+}
+
+.txtOpc
+{
+    font-size: 18px;
+    padding: 1vh;
+    background: #000;
+}
+
+.searchFilme
+{
+    top: 2vh;
+    position: absolute;
+    padding: .5vh 1vh;
+    font-size: 18px;
+    border-radius: .5vh;
+    left: 2vh;
+}
+
+.btnFechar
+{
+    position: absolute;
+    padding: .5vh 1.2vh;
+    box-shadow: 1px 2px 4px #000;
+    font-size: 25px;
+    background: #9e0000;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    border-radius: 5vh;
+    /* margin-top: 1vh; */
+    bottom: 93.5%;
+    left: 94%;
+}

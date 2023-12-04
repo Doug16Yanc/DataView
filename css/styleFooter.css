@@ -1,0 +1,77 @@
+.footerBody
+{
+    position: relative;
+    display: flex;
+    background: linear-gradient(#060429, rgb(0, 0, 0)) no-repeat;
+    height: auto;
+    flex-direction: column;
+    z-index: -1;
+    padding-top: 1vw;
+}
+
+.lastText
+{
+    display: flex;
+    color: #73a4c5;
+    align-items: center;
+    justify-content: center;
+    font-size: max(10px, 1vw);
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    border-top: .1vw solid;
+    padding: 5vw;
+}
+
+@media (max-width: 768px) 
+{
+    .footerBody
+    {
+        height: 60vh;
+    }
+}
+.wave
+{
+    background: #000;
+    margin-bottom: -5px;
+}
+
+.logoFooter
+{
+    margin-top: 100px;
+    width: 7rem;
+    height: 7rem;
+    position: relative;
+    align-items: center;
+    margin: auto;
+    cursor: pointer;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+.dataName
+{
+    width: fit-content;
+    margin: 5vw auto;
+    color: aliceblue;
+    font-size: max(25px, 2vw);
+}
+
+.phrase
+{
+    font-weight: 500;
+    font-size: max(12px, 1vw);
+    color: #4f758f;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: #00000028;
+    padding: 5vw;
+    margin-bottom: 3vw;
+}
+
+a
+{
+    color: #4f758f;
+}

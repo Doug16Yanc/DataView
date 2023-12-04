@@ -1,0 +1,128 @@
+
+header
+{
+    position : absolute;
+    top : 0;
+    left : 0;
+    right : 0;
+    background-color: #060429;
+    padding : 0.5rem 2%;
+    display : flex;
+    align-items : center;
+    justify-content: space-between;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+}
+
+header {
+    position: fixed;
+}
+
+header .navbar a{
+    font-size : max(15px, .7vw);
+    padding: .5rem 1.5rem;
+    color : #fff;
+    border : .1rem solid transparent;
+}
+header .navbar a.active, header .navbar a:hover{
+    color : #b8b6d6;
+    border : .1rem solid #b8b6d6a6;
+    border-radius: 1vw;
+}
+
+@media (max-width : 1500px)
+{
+    html 
+    {
+        font-size: 55%;
+    }
+    header{
+        padding : 1rem;
+    }
+    header .logo img{
+        height : 6%;
+    }
+}
+
+@media (max-width : 785px){
+    
+    header .logo img{
+        height: 6%;
+    }
+
+    header .navbar{
+        position : fixed;
+        top : 4%;
+        right: 0;
+        background : .1rem solid rgba(205, 170, 124, 0.2);
+        border-bottom: .1rem solid rgba(205, 170, 124, 0.2);
+        padding: .5rem;
+        display: flex;
+        flex-direction: column;
+        background:#060429;
+        height: 500vw;
+        width: 50%;
+        transition: 1050ms;
+        overflow-x: hidden;
+        padding: 5vw;
+        z-index: -1;
+    }
+
+    header .navbar a
+    {
+        padding: 5vw;
+    }
+    
+    header .menuIcon
+    {
+        display: block;
+    }
+    .hiddenMenu
+    {
+        transform: translateX(100%);
+        transition: transform 1000ms;
+    }
+}
+
+.menuIcon
+{
+    top: 20%;
+    right: 15%;
+    position: absolute;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+}
+
+.logoTitle
+{
+    width: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+.titlePage
+{
+    margin-left: 1rem;
+    color: #87b6c2;
+    padding: .5vw 3vw;
+    border: #b8b6d6a6 solid .1rem;
+    border-radius: 5vw;
+    font-size: max(10px, 1vw);
+}
+
+@media (max-width : 785px)
+{
+    .logoTitle
+    {
+        width: 60%;
+        display: flex;
+        text-align: right;
+        align-items: center;
+        justify-content: right;
+        flex-direction: row;
+    }
+}
