@@ -70,3 +70,14 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.bgGod1
+{
+    position: absolute;
+    weight: 50%;
+    width: 50%;
+    left: 50%;
+    top: 48%;
+    z-index: 0;
+}
+

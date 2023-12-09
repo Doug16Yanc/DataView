@@ -240,7 +240,7 @@
     left: 30%;
     margin-top: 20%;
     z-index: 999;
-    background: linear-gradient(#00000000, #000000ab);
+    background: #002958/*linear-gradient(#00000000, #000000ab);*/
     padding: 5vh;
     border-bottom-right-radius: 1vh;
     border-bottom-left-radius: 1vh;
@@ -332,3 +332,409 @@
     bottom: 60%;
 }
 
+.botaoVerGames
+{
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+    width: 40vh;
+    font-size: 2.5vh;
+    height: fit-content;
+    padding: 2vh 5vh;
+    text-align: left;
+    /* left: 10vh; */
+    background: #00691d;
+    color: #fff;
+    /* margin-top: 6.5vh; */
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.boxDesc
+{
+    font-size: 30px;
+    width: 50%;
+    background: #000000a6;
+    padding: 7vh;
+    position: absolute;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    left: 50%;
+    bottom: 110%;
+    border-radius: 5vh;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+}
+
+.animationBoxDesc
+{
+    transform: translateX(0);
+}
+
+.titleFilm
+{
+    position: relative;
+    display: flex;
+    padding: 1vh;
+    margin-top: -2vh;
+    margin-bottom: 2vh;
+    
+}
+
+.titleFilm h3
+{
+    color: #99A5BC;
+}
+
+.btnAdd
+{
+    position: relative;
+    padding: 1vh 2vh;
+    box-shadow: 3px 4px 5px #000;
+    font-size: 20px;
+    background: #00691D;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    width: 40%;
+    border-radius: 5vh;
+    text-align: center;
+}
+
+.btnAdd:hover
+{
+    background: #005318;
+    box-shadow: 2px 2px 4px #00000088;
+}
+
+.btnRemove
+{
+    position: relative;
+    bottom: 2vh;
+    right: 15vh;
+    padding: .2vh 1vh;
+    box-shadow: 1px 2px 4px #000;
+    font-size: 25px;
+    background: #690000;
+    color: #fff;
+    border-radius: 5vh;
+    margin-top: 1vh;
+}
+
+.btnRemove:hover
+{
+    background: #4e0000;
+    box-shadow: 2px 2px 4px #00000088;
+}
+
+.searchMovie
+{
+    padding: 1vh;
+    display: flex;
+    margin: auto;
+    border-radius: 1vh;
+    font-size: 15px;
+    width: 10vh;
+    margin-top: 1vh;
+
+}
+
+.boxHeader
+{
+    position: relative;
+    bottom: 12%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;  
+}
+
+.myList 
+{
+    display: flex;
+    position: relative;
+    background: #0A2945;
+    margin: auto 0;
+    padding: 1.5vh 8vh;
+    font-size: max(25px, 1vh);
+    width: 35vh;
+    height: fit-content;
+    border-top-right-radius: 12vh;
+    border-bottom-right-radius: 12vh;
+}
+
+.botaoVerTitulos
+{
+    display: flex;
+    position: relative;
+    width: 30vh;
+    font-size: max(20px, 1.8vh);
+    height: fit-content;
+    padding: 2vh 3vh;
+    text-align: left;
+    background: #00691d;
+    color: #fff;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    box-shadow: -5px 5px 8px rgb(0, 4, 14)
+}
+
+.botaoVerTitulos:hover
+{
+    background: #004214;
+    box-shadow: -2px 2px 6px rgba(0, 4, 14, 0.733)
+}
+
+.arrowImg
+{
+    position: relative;
+    width: 9%;
+    height: 19%;    
+    left: 88%;
+    top: 5.3vh;
+    z-index: 1;
+}
+
+.hiddenMenuList
+{
+    opacity: 0;
+    transition: 600ms ease-in-out;
+    z-index: -999;
+}
+
+.opcoesAdd
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 95%;
+    padding: .5vh;
+}
+
+.opcoesAdd button
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.name
+{
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    padding: 1.2vh;
+    box-shadow: 2px 3px 4px #00000036;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10vh;
+    margin-top: 0.5vh;
+}
+
+.containerAvailable
+{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin-right: 2vh;
+}
+
+.hiddenOpcoes
+{
+    z-index: 1;
+    background: linear-gradient(45deg, #000a16f6, #00050a);
+    border-radius: 1vh;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    position: fixed;
+    width: 20%;
+    border: #000000ea solid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    bottom: 100%;
+    padding: 2vh;
+    position: absolute;
+    left: 40%;
+    transform: translateX(0);
+    animation: 1.5s ease-in-out;
+    justify-content: center;
+}
+
+
+.translateHiddenOpcoes1
+{
+    transform: translateX(350%);
+}
+.translateHiddenOpcoes2
+{
+    transform: translateX(100%);
+    transition: 1s ease-in-out;
+}
+.translateHiddenOpcoes
+{
+    transform: translateX(0%);
+}
+
+.backAllTranslateHiddenOpcoes
+{
+    transform: translateX(350%);
+}
+
+.titleOpc
+{
+    text-align: center;
+    border-radius: .5vh;
+    font-size: 18px;
+    padding: .2vh 1vh;
+    width: 100%;
+    background: linear-gradient(90deg, #3f0d0d98, #002d6198);
+    font-size: max(18px, 1.5vh);
+}
+
+.txtOpc
+{
+    font-size: 18px;
+    padding: 1vh;
+    background: linear-gradient(45deg, #3f0d0d7c, #002d61ab);
+    margin-top: -1vh;
+    text-align: center;
+    border-radius: .5vh;
+}
+
+.searchFilme
+{
+    top: 2vh;
+    position: absolute;
+    padding: .5vh 1vh;
+    font-size: 18px;
+    border-radius: .8vh;
+    left: 2vh;
+}
+
+.btnFechar
+{
+    position: absolute;
+    padding: .5vh 1.2vh;
+    box-shadow: 1px 2px 4px #000;
+    font-size: 25px;
+    background: #9e0000;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    border-radius: 5vh;
+    bottom: 93.5%;
+    left: 0%;
+}
+
+.imgAdd
+{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    width: fit-content;
+}
+
+.imgSelected
+{
+    width: 13.5vh;
+    box-shadow: 6px 6px 100px rgb(96, 205, 255);
+    border: #002958 5px solid;
+}
+
+.menuTitulos
+{
+    background-image: url(../images/imgListas/bgTitulos.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border: rgba(0, 0, 0, 0.884) 1px solid;
+    box-shadow: -50px -70px 90px #00000081;
+    width: 60%;
+    height: 50vh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 6vh;
+    left: 60%;
+    bottom: 100%;
+    z-index: 999;
+    border-radius: 3vh;
+    transition: 600ms ease-in-out;
+    overflow: auto;
+    transition: 1s;
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.hiddenSideAvailable
+{
+    transform: translateX(110%);
+    transition: 1s;
+}
+
+.visibleSideAvailable
+{
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.confirmAddMeio
+{
+    background: #00691D;
+}
+
+.cancelAddMeio
+{
+    background: #9e0000;
+}
+
+.opcBtn
+{
+    padding: 1vh;
+    font-size: 15px;
+    width: 15vh;
+    margin: 1vh 0 auto;
+    color: #fff;
+    border-radius: 1vh;
+}
+
+.opcBtn:hover
+{
+    background: #9753533a;
+}
+
+.hiddenInput
+{
+    display: none !important;
+    z-index: -999 !important;
+}
+
+.sectionSearch
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listAvailable
+{
+    width: 10vh;
+    margin: 2vh 1vh -2vh 2vh;
+    box-shadow: 10px 10px 50px #000;
+}
+
+.listAvailable:hover
+{
+    box-shadow: 10px 8px 55px #0842ac98;
+}

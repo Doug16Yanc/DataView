@@ -1,3 +1,4 @@
+
 const imgsContainer = document.querySelector('.container');
 
 class AddImagesSlider

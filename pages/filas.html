@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/styleNavbar.css">
     <link rel="stylesheet" href="../css/styleFooter.css">
     <link rel="stylesheet" href="../css/styleFilas.css">
-    <script defer src="../js/jsNavbar.js"></script>
+ 
 </head>
 
 <body>
@@ -58,8 +58,9 @@
         <div class="section2">
             <div class="rightSide">
                 <div class="queueContent">
-                    <div class="queueBox">
-                        <div class="itemBox">
+                    <div class="queueBox" id="fila"> 
+                     <!-- <div class="itemBox">
+                            
                             <span class="name">
                                 5500 a.C.
                             </span>
@@ -82,7 +83,7 @@
                         <span class="name">
                             1837
                         </span>
-                        <img src ="../images/imgFilas/Babbage-Difference-Engine-No.-2-759756.jpg" alt="img_queue" class="img_queue">
+                        <img src ="../images/imgFilas/engenho.jpg" alt="img_queue" class="img_queue">
                         <h2>
                             Engenho analítico
                         </h2>
@@ -122,15 +123,23 @@
                         <h2>
                             Altair 8800
                         </h2>
-                    </div>
+                    </div> -->
+                    </div> 
+                    <div class="buttons">
+                            <button id="removerBtn">Remover</button>
+                            <button id="adicionarBtn">Inserir</button>
+                            </div>
                     </div>
                 </div>
+              
                 <div class="leftSide">
+                    
                     <div class="robot">
                         <img src="../images/imgFilas/ultron-textless-aou-poster-removebg-preview.png" alt="" class="bgRobot">
                     </div>
-                </div>
-            </div>
+                </div> 
+
+            
           <!--  <div class="leftSide">
                 <div class="robot">
                     <img src="../images/imgFilas/cyber-removebg-preview.png" alt="" class="bgRobot">
@@ -161,7 +170,9 @@
         </div>
 
         </div>
-    </footer>
+    </footer>  
+     <script defer src="../js/jsNavbar.js"></script>
+    <script defer src="../js/jsFilas.js"></script>
 </body>
 
 </html>
