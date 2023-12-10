@@ -7,7 +7,7 @@
 
 .section1
 {
-    background-image: url('../images/bg6.png');
+    background-image: url('../images/imgHash/tela3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -74,4 +74,470 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.title2{
+    font-size : 25px;
+    display: flex;
+}
+
+.circleText
+{
+    background: linear-gradient(#00000000, #000000);
+    box-shadow: 7px 8px 5px #000;
+    font-size: 23px;
+    margin-left: 5vh;
+    width: 37vh;
+    height: auto;
+    padding: 5vh;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.leftSide2
+{
+    flex-direction: row;
+    width: 50%;
+}
+
+.rightSide2
+{
+    /* display: flex; */
+    flex-direction: row;
+    height: fit-content;
+    width: 30%;
+    background: #000;
+
+}
+
+.menuList
+{
+    /* display: flex; */
+    flex-direction: row;
+    /* width: 100%; */
+    /* background: #000; */
+    /* margin-right: 50vh; */
+}
+
+.contentSides
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.listContent
+{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: inline;
+    height: 100vh;
+    z-index: 0;
+}  
+
+.botaoVerGames
+{
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+    width: 40vh;
+    font-size: 2.5vh;
+    height: fit-content;
+    padding: 2vh 5vh;
+    text-align: left;
+    /* left: 10vh; */
+    background: #00691d;
+    color: #fff;
+    /* margin-top: 6.5vh; */
+    border-top-right-radius: 10vh;
+    border-bottom-right-radius: 10vh;
+}
+
+
+.searchGame
+{
+    width: 50vh;
+    overflow: hidden;
+    padding: 2vh;
+    font-size: 20px;
+    background: #ffffff48;
+    color: #fff;
+    border-bottom-left-radius: 10vh;
+    border-top-left-radius: 10vh;
+    border: 1px #fff solid;    
+}
+
+.listBox2
+{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    left: 30%;
+    margin-top: 20%;
+    z-index: 999;
+    background: linear-gradient(#00000000, #000000ab);
+    padding: 5vh;
+    border-bottom-right-radius: 1vh;
+    border-bottom-left-radius: 1vh;
+}
+.listBox2 img
+{
+    width: 15vh;
+    margin: 1vh;
+}
+
+.bgGeralt
+{
+    z-index: 0;
+}
+
+.itemList
+{
+    width: 10vh;
+    height: 10vh;
+    /* position: relative; */
+    /* display: flex; */
+    flex-direction: row;
+    /* padding: 1vh; */
+    margin: 1.5vh;
+    border: solid 1px #5669a8;
+    border-radius: .5vh;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 3px 6px #000;
+        /* z-index: 999; */
+
+}
+.bgGeralt
+{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    top: 48%;
+    z-index: 0;
+}
+
+.itemBox
+{
+    /* background: #000; */
+    width: fit-content;
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right: 5vh;
+    /* z-index: 999; */
+
+}
+
+.itemBox h2
+{
+    padding: 5vh;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.myList
+{
+    margin: -7vh 9.6vh;
+    margin-top: 0;
+    background: #0A2945;
+    padding: 2vh 5vh;
+    font-size: 25px;
+    width: fit-content;
+    border-top-right-radius: 12vh;
+    border-bottom-right-radius: 12vh;
+}
+
+.boxHeader
+{
+    position: relative;
+    bottom: 12%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;  
+}
+
+
+.botaoVerTitulos
+{
+    display: flex;
+    /* flex-direction: row; */
+    position: relative;
+    width: 40vh;
+    font-size: 2.5vh;
+    height: fit-content;
+    padding: 2vh 5vh;
+    text-align: left;
+    /* left: 10vh; */
+    background: #00691d;
+    color: #fff;
+    /* margin-top: 6.5vh; */
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+
+}
+
+.botaoVerTitulos:hover
+{
+    background: #004214;
+    box-shadow: -2px 2px 6px rgba(0, 4, 14, 0.733)
+}
+
+.arrowImg
+{
+    position: relative;
+    width: 9%;
+    height: 19%;    
+    left: 88%;
+    top: 5.3vh;
+    z-index: 1;
+}
+
+.hiddenMenuList
+{
+    opacity: 0;
+    transition: 600ms ease-in-out;
+    z-index: -999;
+}
+
+.opcoesAdd
+{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    width: 95%;
+    padding: .5vh;
+}
+
+.opcoesAdd button
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.name
+{
+    font-size: 20px;
+    position: relative;
+    display: flex;
+    padding: 1.2vh;
+    box-shadow: 2px 3px 4px #00000036;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10vh;
+    margin-top: 0.5vh;
+}
+
+.containerAvailable
+{
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin-right: 2vh;
+}
+
+.hiddenOpcoes
+{
+    z-index: 1;
+    background: linear-gradient(45deg, #000a16f6, #00050a);
+    border-radius: 1vh;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    position: fixed;
+    width: 20%;
+    border: #000000ea solid;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    bottom: 100%;
+    padding: 2vh;
+    position: absolute;
+    left: 40%;
+    transform: translateX(0);
+    animation: 1.5s ease-in-out;
+    justify-content: center;
+}
+
+
+.translateHiddenOpcoes1
+{
+    transform: translateX(350%);
+}
+.translateHiddenOpcoes2
+{
+    transform: translateX(100%);
+    transition: 1s ease-in-out;
+}
+.translateHiddenOpcoes
+{
+    transform: translateX(0%);
+}
+
+.backAllTranslateHiddenOpcoes
+{
+    transform: translateX(350%);
+}
+
+.titleOpc
+{
+    text-align: center;
+    border-radius: .5vh;
+    font-size: 18px;
+    padding: .2vh 1vh;
+    width: 100%;
+    background: linear-gradient(90deg, #3f0d0d98, #002d6198);
+    font-size: max(18px, 1.5vh);
+}
+
+.txtOpc
+{
+    font-size: 18px;
+    padding: 1vh;
+    background: linear-gradient(45deg, #3f0d0d7c, #002d61ab);
+    margin-top: -1vh;
+    text-align: center;
+    border-radius: .5vh;
+}
+
+.searchFilme
+{
+    top: 2vh;
+    position: absolute;
+    padding: .5vh 1vh;
+    font-size: 18px;
+    border-radius: .8vh;
+    left: 2vh;
+}
+
+.btnFechar
+{
+    position: absolute;
+    padding: .5vh 1.2vh;
+    box-shadow: 1px 2px 4px #000;
+    font-size: 25px;
+    background: #9e0000;
+    margin: auto;
+    display: flex;
+    color: #fff;
+    border-radius: 5vh;
+    bottom: 93.5%;
+    left: 0%;
+}
+
+.imgAdd
+{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vh;
+    width: fit-content;
+}
+
+.imgSelected
+{
+    width: 13.5vh;
+    box-shadow: 6px 6px 100px rgb(96, 205, 255);
+    border: #002958 5px solid;
+}
+
+.menuTitulos
+{
+    background-image: url(../images/imgListas/bgTitulos.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border: rgba(0, 0, 0, 0.884) 1px solid;
+    box-shadow: -50px -70px 90px #00000081;
+    width: 60%;
+    height: 50vh;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-top: 6vh;
+    left: 60%;
+    bottom: 100%;
+    z-index: 999;
+    border-radius: 3vh;
+    transition: 600ms ease-in-out;
+    overflow: auto;
+    transition: 1s;
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.hiddenSideAvailable
+{
+    transform: translateX(110%);
+    transition: 1s;
+}
+
+.visibleSideAvailable
+{
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.confirmAddMeio
+{
+    background: #00691D;
+}
+
+.cancelAddMeio
+{
+    background: #9e0000;
+}
+
+.opcBtn
+{
+    padding: 1vh;
+    font-size: 15px;
+    width: 15vh;
+    margin: 1vh 0 auto;
+    color: #fff;
+    border-radius: 1vh;
+}
+
+.opcBtn:hover
+{
+    background: #9753533a;
+}
+
+.hiddenInput
+{
+    display: none !important;
+    z-index: -999 !important;
+}
+
+.sectionSearch
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.listAvailable
+{
+    width: 10vh;
+    margin: 2vh 1vh -2vh 2vh;
+    box-shadow: 10px 10px 50px #000;
+}
+
+.listAvailable:hover
+{
+    box-shadow: 10px 8px 55px #0842ac98;
 }

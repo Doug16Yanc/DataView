@@ -1,13 +1,8 @@
 
 const imgsContainer = document.querySelector('.container');
-const btnAddInicio = document.querySelector('.addInicio');
-const btnAddFim = document.querySelector('.addFim');
-const btnAddMeio = document.querySelector('.addMeio');
 const input = document.querySelector('.sectionSearch');
 const valueInput = document.querySelector('.searchMovie')
 const hiddenOpcoes = document.querySelector('.hiddenOpcoes');
-const btnCancelAddMeio = document.querySelector('.cancelAddMeio');
-const btnConfirmAddMeio = document.querySelector('.confirmAddMeio');
 const description = document.querySelector('.desc');
 const titleSelected = document.querySelector('.titleSelected');
 const yearSelected = document.querySelector('.year');
@@ -230,4 +225,4 @@ const handleClick = () =>
     hiddenOpcoes.classList.toggle('translateHiddenOpcoes2');
 };
 document.querySelector('.botaoVerGames').addEventListener('click', handleClick);
-document.querySelector('.arrowImg').addEventListener('click', handleClick);
+document.querySelector('.').addEventListener('click', handleClick);

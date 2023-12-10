@@ -240,7 +240,7 @@
     left: 30%;
     margin-top: 20%;
     z-index: 999;
-    background: #002958/*linear-gradient(#00000000, #000000ab);*/
+    background: linear-gradient(#00000000, #000000ab);
     padding: 5vh;
     border-bottom-right-radius: 1vh;
     border-bottom-left-radius: 1vh;
