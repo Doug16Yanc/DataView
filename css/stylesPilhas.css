@@ -1,78 +1,597 @@
-.content
+/* .content
 {
     display: flex;
-    flex-direction: column;
-    color: #fff;
+} */
+
+body
+{
+    overflow: hidden;
 }
 
 .section1
 {
-    background-image: url('../images/bg6.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url('../images/imgPilhas/bg1.png');
+    height: 70vh;
     background-position: 0 0;
-    height: 100vh;
-    width: 100%;
-    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
     flex-direction: row;
-    
+    width: 100%;
+    /* background: #b31616; */
 }
 
 .leftSide
 {
+    padding-top: 10vh;
     flex-direction: column;
     margin-left: 5vh;
     width: 50%;
     /* background: #000; */
 }
 
-.section1 h1
+.leftSide h1
 {
-    position: relative;
-    margin-top: 100px;
-    margin-left: 3.5vh;
-    padding: 1vh 5vh;
-    font-size: 3vh;
+    color: #fff;
+    border-radius: .5vh;
+    padding: .8vh 5vh;
     width: fit-content;
-    background: #0c0479;
+    background: #0819b8;
+    border-radius: 1vh;
+    font-size: min(30px, 2vh);
+}
+
+.leftSide p
+{
+    margin-top: 10vh;
+    background: #000000bd;
+    padding: 5vh;
+    color: #fff;
+    font-size: 20px;
+    width: 100%;
+    font-size: min(30px, 3vh);
     border-radius: 1vh;
 }
 
-.section1 p
+
+
+.caracter1
 {
     position: relative;
-    margin-top: 5vh;
-    left: -5vh;
-    font-size: 25px;
-    width: 100%;
-    padding: 3vh;
-    border-radius: 3vh;
-    background: #00000079;
-
+    width: 20%;
+    left: 80%;
+    bottom: 70%;
 }
 
 
 .section2
 {
-    background-image: url('../images/imgPilhas/punk.jpg ');
+    display: flex;
+    position: relative;
+    background-image: url('../images/imgPilhas/bg4.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 150vh;
+}
+
+.caracter2
+{
+    position: absolute;
+    width: 40%;
+    z-index: 1;
+}
+
+
+.leftSide2
+{
+    /* background: #af0a0a; */
+    width: 75%;
+}
+
+.titleMsg
+{
+    color: #fff;
+    padding: 2vh;
+    margin-top: -2vh;
+    font-size: min(50px, 5vh);
+}
+
+.containerMsg2
+{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: fit-content;
+    background: #000000bd;
+    padding: 10vh;
+    color: #fff;
+    font-size: 20px;
+    width: 70%;
+    font-size: min(30px, 3vh);
+    border-radius: 1vh;
+    /* z-index: 999; */
+    top:30%;
+    z-index: 2;
+}
+
+@media (max-width: 1024px)
+{
+    .caracter1
+    {
+        width: 30%;
+        bottom: 80%;
+    }
+    .containerMsg2
+    {
+        top: 10%;
+    }
+}
+@media (max-width: 1440px)
+{
+    .leftSide p
+    {
+        font-size: 2.2vh;
+    }
+    .titleMsg
+    {
+        font-size: min(30px, 4vh);
+
+    }
+    .containerMsg2
+    {
+        font-size: min(20px, 3vh);
+        top: 12%;
+
+    }
+
+}
+
+.rightSide2
+{
+    width: 50%;
+    /* background: #b97b09; */
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+}
+
+.botaoVerLivros
+{
+    position: relative;
+    background: linear-gradient(135deg, #003a40, #000000);
+    color: #fff;
+    font-size: min(25px, 2vh);
+    padding: 2vh 5vh;
+    border-top-left-radius: 10vh;
+    border-bottom-left-radius: 10vh;
+    width: 50%;
+    align-items: left;
+}
+
+.botaoVerLivros:hover
+{
+    background: linear-gradient(45deg, #002f33, #000000);
+}
+
+.titleLivros
+{
+    position: relative;
+    top: 5%;
+    background: #003a40;
+    font-size: 20px;
+    padding: 3vh 5vh;
+    color: #fff;
+    /* font-weight: 600; */
+    height: 10vh;
+    background: linear-gradient(#00000000, #003a40);
+    align-content: center;
+    width: 100%;
+}
+
+.titleLivros h2
+{
+    position: relative;
+    /* background: #000; */
+    text-align: center;
+        font-size: min(30px, 2vh);
+
+}
+
+.shelfDiv
+{
+    display: flex;
+    /* background: #b10000; */
+    width: 100%;
+    /* height: fit-content; */
+    position: relative;
+    top: 5%;
+    background-image: url(../images/imgPilhas/shelf.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: 0 0;
+    z-index: 10;
+    justify-content: left;
+}
+
+.divBooks
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    /* background: #35a800; */
+    /* height: 100vh; */
+    width: 105%;
+    padding: 10vh;
+    height: auto;
+    /* margin-left: 8vh; */
+    /* position: relative; */
+    margin: auto;
+    margin-left: 1vh;
+    margin-top: 5vh;
+}
+
+.books
+{
+    display: flex;
+    height: 100%;
+    /* position: relative; */
+    /* top: 100%; */
+    /* left: -%; */
+    /* margin-left: -3vh; */
+    /* margin-top: 4vh; */
+    /* background: #000; */
+    box-shadow: 2vh 0.1vh 1.5vh #000;
+        transition: 1s ease-in-out;
+}
+
+@media (max-width: 1440px)
+{
+    .shelfDiv
+    {
+        width: 120%;
+    }
+    .titleLivros
+    {
+        width: 120%;
+    }
+}
+
+.imgBook
+{
+    display: flex;
+    height: 16vh;
+    /* position: relative; */
+    /* top: 100%; */
+    /* left: -%; */
+    margin-left: -12vh;
+    /* margin-top: 6vh; */
+    /* background: #000; */
+    box-shadow: 2vh 0.1vh 1.5vh #000;
+        transition: 1s ease-in-out;
+        align-items:flex-end;
+        justify-content: end;
+}
+
+.booksHover:hover
+{
+    transition: 1000ms;
+    height: 18.5vh;
+    cursor: pointer;
+    background: linear-gradient(#000000, #0000005b);
+}
+
+.zoom
+{
+    height: 30vh;
+    transition: 500ms ease-in-out;
+    z-index: 999;
+    /* position: absolute; */
+    transform: translateX(30%);
+    transition: 1s ease-in-out;
+}
+
+.hiddenMenuBooks
+{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/imgPilhas/cyberLib.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    height: 100vh;
-    width: 100%;
+    box-shadow: -25vh -25vh 40vh #000;
+    border: #004b58 .2vh solid;
+    position: absolute; 
+    right: 39%;
+    top: 20%;
+    border-radius: 1vh;
+    overflow: auto;
+    height: 50vh;
+    width: 70vh;
+    z-index: 9;
+    transition: 1s ease-in-out;
+}
+@media (max-width: 1440px)
+{
+    .hiddenMenuBooks
+    {
+        right: 45%;
+    }   
+}
+
+.contentHiddenMenu
+{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 2vh;
+    /* background: #960202; */
+    width: 100%;
+    margin: auto;
+    justify-content: start;
 }
 
-.bgGroup
+.bookMenu
+{
+    height: 17vh;
+    cursor: pointer;
+    box-shadow: 1vh 1vh 2vh #000;
+
+}
+
+/* .bookMenuHover:hover
+{
+    height: 17.4vh;
+    box-shadow: 1vh 1vh 5vh #001a2b;
+} */
+
+.overlay
+{
+    height: 100vh;
+    width: 100vh;
+}
+
+.about
+{
+    text-align: center;
+    font-size: min(30px, 2vh);
+    padding: 1vh;
+    color: #fff;
+    background: linear-gradient(90deg, #003a40, #000000);
+}
+
+.bookContent
+{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#003a4000, #0000008c, #003a40);
+    width: 15vh;
+    height: fit-content;
+    /* justify-content: center; */
+    align-items: center;
+    margin: .3vh;
+    padding: 1vh;
+    border-radius: 1vh;
+    box-shadow: 1vh 1vh 2vh #000000;
+    text-align: center;
+}
+
+.titleBook
+{
+    padding: 1vh;
+    color: #fff;
+    font-size: min(30px, 2vh);
+    background: linear-gradient(45deg, #005564, #00000000);
+    border-radius: .5vh;
+    font-weight: 600;
+}
+
+.titleBookHidden
+{
+    padding: 1vh;
+    color: #fff;
+    font-size: min(25px, 1.5vh);
+    background: linear-gradient(45deg, #005564, #00000000);
+    border-radius: .5vh;
+    font-weight: 600;
+}
+
+
+
+.btnAdd
+{
+    font-size: min(25px, 2vh);
+    background: linear-gradient(90deg,#0f9c85, #014d43);
+    box-shadow: .2vh .2vh 1vh #00000059;
+    padding: 1vh;
+    color: #fff;
+    border-radius: 1vh;
+}
+.btnRemove
+{
+    position: relative;
+    font-size: min(30px, 2vh);
+    background: linear-gradient(90deg,#9c370f, #4d0101);
+    box-shadow: .2vh .2vh 2vh #00000059;
+    padding: 1vh;
+    color: #fff;
+    border-radius: 1vh;
+    top: 150%;
+    left: 85%;
+    z-index: 99;
+}
+
+.btnRemove:hover
+{
+    background: linear-gradient(90deg, #4d0101, #9c370f);
+    box-shadow: .2vh .2vh 1vh #00000059;
+
+}
+
+.btnClose
+{
+    font-size: min(30px, 2vh);
+    background: linear-gradient(90deg,#0f9c85, #014d43);
+    box-shadow: .2vh .2vh 1vh #00000059;
+    padding: 1vh;
+    color: #fff;
+    border-radius: 1vh;
+    margin-top: 5vh;
+}
+
+.btnAdd:hover
+{
+    background: linear-gradient(45deg,#0b806c, #01332c);
+    box-shadow: .2vh .2vh .1vh #00000059;
+}
+
+.btnClose:hover
+{
+    background: linear-gradient(45deg,#0b806c, #01332c);
+    box-shadow: .2vh .2vh .1vh #00000059;
+}
+
+.hidden
+{
+    transform: translateX(100%);
+    transition: 1s linear;
+    box-shadow: none;
+}
+
+.info
+{
+    display: flex;
+    height: auto;
+    width: 130%;
+    transition: 500ms ease-in-out;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    flex-direction: column;
+    /* transform: translateX(50%) translateY(-40%); */
+    /* right: 100%; */
+    top: 0;
+    transform: translateX(-100%);
+    transition: 1s ease-in-out;
+    z-index: 999;
+    background: linear-gradient(45deg, #001e24ef, #000000c9);
+    box-shadow: .5vh .5vh 5vh #000;
+}
+
+.divClose
 {
     position: absolute;
-    weight: 50%;
-    width: 50%;
-    left: 50%;
-    top: 48%;
-    z-index: 0;
+    width: fit-content;
+    padding: .5vh;
+    /* background: #000; */
 }
 
+.close
+{
+    box-shadow: .1vh .2vh .5vh #0000009c;
+    border-radius: 100vh;
+    opacity: .8;
+    height: 4vh;
+    
+}
 
+.close:hover
+{
+    opacity: .7;
+    box-shadow: none;
+
+}
+
+.txtInfo
+{
+    display: flex;
+    color: #fff;
+    font-size: min(30px, 2vh);
+}
+
+.hiddenInfo
+{
+    display: none;
+
+}
+
+.showInfo
+{
+    display: flex;
+}
+
+.bookUser
+{
+    /* background: #000; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+    border-radius: 1vh;
+}
+.eye
+{
+    position: absolute;
+    width: 4vh;
+    z-index: 999;
+    background: linear-gradient(#ffffff5e, #ffffff);
+    border-radius: 5vh;
+    box-shadow: 1vh 1vh 1vh #000;
+}
+.eye:hover
+{
+    background: linear-gradient(#ffffff, #ffffff5e);
+    box-shadow: 1vh 1vh 1vh #00000096;
+    cursor: pointer;
+        width: 4.5vh;
+
+}
+
+.ulInfo
+{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    background: linear-gradient(90deg, #00000000, #001e24);
+    width: 100%;
+    height: 100%;
+    font-size: min(30px, 2vh);
+    align-items: left;
+    justify-content: start;
+    padding: 2vh;
+    border-radius: 1vh;
+    padding-top: 8vh;
+}
+
+.liAutor
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+
+}
+
+.liAno
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+.autorContent
+{
+    margin-left: 1vh;
+    font-weight: 500;
+}
+
+.anoContent
+{
+    margin-left: 1vh;
+    font-weight: 500;
+
+}

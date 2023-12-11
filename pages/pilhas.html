@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/styleFooter.css">
     <link rel="stylesheet" href="../css/stylesPilhas.css">
     <script defer src="../js/jsNavbar.js"></script>
+    <script defer src="../js/jsPilhas.js"></script>
 </head>
 
 <body>
@@ -27,12 +28,13 @@
             <a href="#">Pilhas</a>
             <a href="../pages/filas.html">Filas</a>
             <a href="../pages/heaps.html">Heaps</a>
-            <a href="../pages/arvores.html">Árvores</a>
+            <a href="../pages/arvores.html">Arvores</a>
             <a href="../pages/hash.html">Hash Tabels</a>
             <a href="../pages/grafos.html" active>Grafos</a>
         </nav>
         <img src="../images/menu.png" alt="menu" class="menuIcon">
     </header>
+
     <section class="content">
         <div class="section1">
             <div class="leftSide">
@@ -40,22 +42,148 @@
                     PILHAS
                 </h1>
                 <p class="msgInicial">
-                    Uma pilha é uma estrutura de dados que segue a abordagem "último a entrar, primeiro a sair" (LIFO - Last In, First Out). 
-                    Em termos de estrutura de dados, uma fila é um conjunto ordenado de elementos, onde as operações principais são a inserção
-                    e a remoção do início da pilha. Portanto, o elemento que entrou por último na pilha é o primeiro a ser removido.
-                    Imagine, por exemplo, uma pilha de livros de literatura cyberpunk e ficção científica.
-               </p>
+                    Uma pilha é uma coleção de elementos onde você só pode adicionar (empilhar,
+                    remover desempilhar) itens do topo. O último item que você adiciona é o 
+                    primeiro a ser removido. Imagina uma pilha de pratos: você adiciona um prato 
+                    em cima da pilha e tira sempre o que está no topo. Isso é uma pilha na 
+                    programação, uma forma de organizar e acessar dados. Que tal construir uma pilha de livros?
+                </p>            
+            </div>
+            <img src="../images/imgPilhas/caracter1.png" alt="" class="caracter1">
 
+        </div>
+        <div class="section2">
+            <div class="leftSide2">
+                <img src="../images/imgPilhas/caracter2.png" alt="" class="caracter2">
+                <div class="containerMsg2">
+
+                    <h1 class="titleMsg">
+                        Sobre Nossos Livros
+                    </h1>
+                    <p class="msgSec">
+                        Cyberpunk: fusão de alta tecnologia e baixa qualidade de vida,
+                        inspirado na cibernética e no punk alternativo. Este
+                        gênero descreve um futuro distópico que lembra um fliperama 
+                        sujo dos anos 80/90, com vida caótica, máquinas barulhentas
+                        e atmosfera poluída. Apesar disso, fascina os habitantes com 
+                        promessas de tecnologias avançadas, incorporando ciência
+                        avançada e disrupção no sistema civil.
+                    </p>
+                </div>
             </div>
-            </div>
-            <div class="section2">
-                <div class="leftSide">
-                    <div class="robot">
-                        <img src="../images/imgPilhas/flash-removebg-preview.png" alt="" class="bgGroup">
+            <div class="rightSide2">
+                <div class="hiddenMenuBooks hidden">
+                    <div class="divClose">
+                        <img src="../images/imgPilhas/rightArrow.png" alt="" class="close">
+                    </div>
+                    <div class="titleAbout">
+                        <h2 class="about">
+                            Nossos livros
+                        </h2>
+                    </div>
+                    <div class="contentHiddenMenu">
+                        <!-- <div class="bookContent">
+                            <img src="../images/imgPilhas/books/livro1.png" alt="" class="bookMenu bookMenuHover">
+                            <p class="titleBookHidden">Título</p>
+                            <div class="btns">
+                                <button class="btnAdd">Adicionar</button>
+                            </div>
+                        </div>
+                        <div class="bookContent">
+                            <img src="../images/imgPilhas/books/livro2.png" alt="" class="bookMenu bookMenuHover">
+                            <p class="titleBook">Título</p>
+                            <button class="btnAdd">Adicionar</button>
+                        </div>
+                        <div class="bookContent">
+                            <img src="../images/imgPilhas/books/livro3.png" alt="" class="bookMenu bookMenuHover">
+                            <p class="titleBook">Título</p>
+                            <button class="btnAdd">Adicionar</button>
+                        </div>
+                        <div class="bookContent">
+                            <img src="../images/imgPilhas/books/livro4.png" alt="" class="bookMenu bookMenuHover">
+                            <p class="titleBook">Título</p>
+                            <button class="btnAdd">Adicionar</button>
+                        </div>
+                        <div class="bookContent">
+                            <img src="../images/imgPilhas/books/livro5.png" alt="" class="bookMenu bookMenuHover">
+                            <p class="titleBook">Título</p>
+                            <button class="btnAdd">Adicionar</button>
+                        </div>
+                        <div class="bookContent">
+                            <img src="../images/imgPilhas/books/livro6.png" alt="" class="bookMenu bookMenuHover">
+                            <p class="titleBook">Título</p>
+                            <button class="btnAdd">Adicionar</button>
+                        </div> -->
+                    </div>
+                </div>
+                <button class="botaoVerLivros">
+                    Ver livros disponíveis
+                </button>
+                <div class="titleLivros">
+                    <h2>
+                        LIVROS CYBERPUNK
+                    </h2>
+                    <button class="btnRemove hiddenInfo">Remover</button>
+                </div>
+                <div class="shelfDiv">
+                    <div class="shelfTop">
+                        <div class="divBooks">
+                            <!-- <div class="bookUser info">
+                                <div class="imgBook books zoom">
+                                    
+                                    <img src="../images/imgPilhas/books/livro2.png" alt="" class="books zoom">
+                                </div>
+                                <p class="titleBook">Título</p>
+                                <ul class="ulInfo">
+                                    <li class="liAutor">Autor:
+                                        <div class="autorContent">
+                                            William Gibson
+                                        </div>
+                                    </li>
+                                    <li class="liAno">Ano:
+                                        <div class="anoContent">
+                                            2020
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="txtInfo">
+                                    No futuro, existe a matrix. Uma espécie de alucinação coletiva digital
+                                    na qual a humanidade se conecta para, virtualmente, saber de tudo sobre tudo.
+                                    Mas há uma elite que navega por essa grande rede de informação – os cowboys.
+                                    Case era um deles, até o dia em que tentou ser mais esperto do que os seus patrões,
+                                    que fritaram suas conexões com o ciberespaço, tornando-o um pária entre os seus iguais.
+                                    Ele vaga pelos subúrbios de Tóquio, mais envolvido do que nunca em destruir a si próprio,
+                                    até ser contatado por Molly, uma bela e perigosa mulher que, assim como ele, desconfia
+                                    de tudo e de todos. Os dois acabam se envolvendo numa missão cheia de mistérios e perigos.
+                                </p>
+                                <button class="btnClose">Fechar</button>
+
+                            </div> -->
+
+                            <!-- <div class="bookUser">
+                                <div class="imgBook">
+                                    <img src="../images/imgPilhas/books/livro2.png" alt="" class="books booksHover">
+                                    <img src="../images/imgPilhas/eye.png" alt="" class="eye">
+                                </div>
+                                <p class="titleBook hiddenInfo">Título</p>
+                                <p class="txtInfo hiddenInfo">
+                                    No futuro, existe a matrix. Uma espécie de alucinação coletiva digital
+                                    na qual a humanidade se conecta para, virtualmente, saber de tudo sobre tudo.
+                                    Mas há uma elite que navega por essa grande rede de informação – os cowboys.
+                                    Case era um deles, até o dia em que tentou ser mais esperto do que os seus patrões,
+                                    que fritaram suas conexões com o ciberespaço, tornando-o um pária entre os seus iguais.
+                                    Ele vaga pelos subúrbios de Tóquio, mais envolvido do que nunca em destruir a si próprio,
+                                    até ser contatado por Molly, uma bela e perigosa mulher que, assim como ele, desconfia
+                                    de tudo e de todos. Os dois acabam se envolvendo numa missão cheia de mistérios e perigos.
+                                </p>
+                                <button class="btnClose hiddenInfo">Fechar</button> -->
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
     <footer>

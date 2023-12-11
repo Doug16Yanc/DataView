@@ -1,3 +1,8 @@
+body
+{
+    overflow: hidden;
+}
+
 .content
 {
     display: flex;
@@ -7,7 +12,7 @@
 
 .section1
 {
-    background-image: url('../images/imgVetores/bg1.png');
+    background-image: url('../images/imgVetores/bg3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -191,11 +196,6 @@
     justify-content: space-between;
 }
 
-.name
-{
-    font-size: 20px;
-    padding: 5vh;
-}
 
 .listContent
 {
@@ -216,7 +216,8 @@
     position: absolute;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 15vh 2vh 2vh 2vh;
@@ -265,12 +266,18 @@
     flex-direction: row;
     /* padding: 1vh; */
     margin: 1.5vh;
-    border: solid 1px #5669a8;
+    /* border: solid 1px #5669a8; */
     border-radius: .5vh;
     justify-content: center;
     align-items: center;
     box-shadow: 5px 3px 6px #000;
-        /* z-index: 999; */
+    /* z-index: 999; */
+    
+}
+
+.itemBoxExample h2
+{
+    font-size: max(15px, 2vh);
 
 }
 .bgGeralt
@@ -284,13 +291,41 @@
 
 .itemBox
 {
-    /* background: #000; */
+    margin: auto;
+    background: linear-gradient(#b386863f, #000322);
     width: fit-content;
     display: flex;
     position: relative;
+    justify-content: center;
     align-items: center;
-    padding-right: 5vh;
+    /* padding-right: 5vh; */
+    flex-direction: column;
     /* z-index: 999; */
+    width: fit-content;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-bottom: 1vh;
+
+}
+
+.itemBoxExample
+{
+    margin: auto;
+    background: linear-gradient(#b386863f, #000322);
+    width: fit-content;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 5vh; */
+    flex-direction: column;
+    /* z-index: 999; */
+    width: 49%;
+    padding: 1vh;
+    border-radius: 0vh;
+    margin: 1px;
+    margin-bottom: 5px;
+    border-radius: .5vh;
 
 }
 
@@ -523,33 +558,66 @@
 
 .name
 {
-    font-size: 20px;
+    font-size: max(15px, 2vh);
+    font-weight: 600;
     position: relative;
     display: flex;
-    padding: 1.2vh;
-    box-shadow: 2px 3px 4px #00000036;
+    padding: 1vh;
+    width: 100%;
+    /* box-shadow: 2px 3px 4px #00000036; */
     text-align: center;
     align-items: center;
     justify-content: center;
+    border-radius: .2vh;
+    background: linear-gradient(90deg, #00010c, #00295885);
+    margin-bottom: 0.5vh;
+}
+
+.nameExample
+{
+    font-size: max(15px, 2vh);
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    padding: 1vh;
+    /* width: 100%; */
+    /* box-shadow: 2px 3px 4px #00000036; */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: .2vh;
+    background: linear-gradient(90deg, #00010c, #00000085);
     border-radius: 10vh;
-    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+    width: 32%;
+    height: 4%;
 }
 
 .btnAdicionar {
-    background-color: green; 
+    background-color: rgb(0, 99, 0); 
+    box-shadow: 1vh 1vh 2vh #000000b0;
     color: white;
     padding: 5px 10px;
     border: none;
     cursor: pointer; 
-    position: absolute;
-    bottom: 0;
-    left: 50%; 
-    transform: translateX(-50%); 
+    font-size: max(20px, 1.5vh);
+    border-radius: 1vh;
+    padding: 1vh;
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 50%;  */
+    /* transform: translateX(-50%);  */
 }
 
+.btnAdicionar:hover
+{
+    background-color: rgb(0, 70, 0); 
+    box-shadow: 1vh 1vh 1vh #00000085;
+}
 
 .containerAvailable
 {
+    position: absolute;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
@@ -557,7 +625,7 @@
     width: 100%;
     height: auto;
     margin-right: 2vh;
-    background: #010025;
+    /* background: #010025; */
 }
 
 .hiddenOpcoes
@@ -667,26 +735,27 @@
 
 .menuTitulos
 {
-    background-image: url(../images/imgListas/bgTitulos.png);
+    /* background-image: url(../images/imgListas/bgTitulos.png); */
     background-repeat: no-repeat;
     background-position: 0 0;
+    background: linear-gradient(#000000c0, #000);
     background-size: cover;
     border: rgba(0, 0, 0, 0.884) 1px solid;
     box-shadow: -50px -70px 90px #00000081;
-    width: 60%;
+    width: 70%;
     height: 50vh;
+    display: flex;
     position: absolute;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     margin: auto;
     padding-top: 6vh;
-    left: 60%;
+    left: 40%;
     bottom: 100%;
     z-index: 999;
     border-radius: 3vh;
     transition: 600ms ease-in-out;
     overflow: auto;
-    transition: 1s;
     transform: translateX(0%);
     transition: 1s;
 }
@@ -751,4 +820,17 @@
 .listAvailable:hover
 {
     box-shadow: 10px 8px 55px #0842ac98;
+}
+
+.nossosGames
+{
+    position: absolute;
+    background: #044685ad;
+    font-size: max(20px, 2vh);
+    font-weight: 600;
+    top: -3%;
+    padding: 1vh 2vh;
+    border-radius: 1vh;
+    width: 100%;
+    text-align: center;
 }

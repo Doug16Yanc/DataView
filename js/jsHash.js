@@ -23,23 +23,44 @@ class AddImagesSlider{
         const pathFileImg = `../images/imgVetores/${this.imgName}`;
         this.imgArray.push(pathFileImg);
     }
-    createImageElement(){
-        this.imgArray.forEach(imgSrc => 
-            {
-                const img = document.createElement('img');
-                img.src = imgSrc;
-                img.classList.add('maxWidthSliders');
-                img.classList.add('slider');
-                imgsContainer.appendChild(img);
+    createImageElement() {
+        this.imgArray.forEach((imgSrc, index) => {
+            const imgContainer = document.createElement('div');
+            imgContainer.classList.add('imageContainer');
+    
+            const img = document.createElement('img');
+            img.src = imgSrc;
+            img.classList.add('maxWidthSliders');
+            img.classList.add('slider');
+    
+            const btnShowName = document.createElement('button');
+            btnShowName.textContent = 'Mostrar Nome';
+            btnShowName.addEventListener('click', () => {
+                this.showProteinName(index);
             });
+    
+            imgContainer.appendChild(img);
+            imgContainer.appendChild(btnShowName);
+            imgsContainer.appendChild(imgContainer);
+        });
     }
+    
+    
+   
+    showProteinName(index) {
+        const proteinName = proteins[index].nome;
+        alert(`Nome da Proteína: ${proteinName}`);
+    }
+    
 };
+
 
 const images = [];
 
 for (let i = 0; i < 8; i++){
     const addImg = new AddImagesSlider(images, 'icons-slide${i + 1}.png');
-    addImg.addInArray();
+    addImg.createImageElement();
+
 }
 
 const proteins = [
@@ -85,6 +106,9 @@ proteins.forEach((proteina) => {
     // Adiciona o elemento 'itemBox' ao elemento com a classe 'containerAvailable'
     containerAvailable.appendChild(itemBox);
 });
+
+
+
 
 
 const showAvailableGames = () => {
