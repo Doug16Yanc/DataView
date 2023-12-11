@@ -535,15 +535,29 @@
     margin-top: 0.5vh;
 }
 
+.btnAdicionar {
+    background-color: green; 
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer; 
+    position: absolute;
+    bottom: 0;
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+
 .containerAvailable
 {
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-right: 2vh;
+    background: #010025;
 }
 
 .hiddenOpcoes

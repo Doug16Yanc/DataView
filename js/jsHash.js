@@ -42,7 +42,7 @@ for (let i = 0; i < 8; i++){
     addImg.addInArray();
 }
 
-const games = [
+const proteins = [
     {id: 0, nome: "ATG-CGA-TCA", imagem: "../images/imgHash/hemoglobina.jpg"},
     {id: 1, nome: "CCA-GGA-TTC", imagem: "../images/imgHash/queratina.jpg"},
     {id: 2, nome: "GTG-TTC-AGA", imagem: "../images/imgHash/albumina.jpg"},
@@ -63,7 +63,7 @@ const containerAvailable = document.querySelector('.containerAvailable');
 
 
 // Itera sobre cada filme na lista 'movies'
-games.forEach((game) => {
+proteins.forEach((proteina) => {
     
     const itemBox = document.createElement('div');
     itemBox.classList.add('itemBox'); 
@@ -71,12 +71,12 @@ games.forEach((game) => {
 
     const img = document.createElement('img');
     img.classList.add('itemList', 'listAvailable'); 
-    img.src = game.imagem; 
+    img.src = proteina.imagem; 
     img.alt = 'img list'; 
     // Cria um elemento span para exibir o nome do filme
     const span = document.createElement('span');
     span.classList.add('name'); // Adiciona a classe 'name' ao elemento span
-    span.textContent = game.nome; // Define o texto do span com base na propriedade 'name' do filme
+    span.textContent = proteina.nome; // Define o texto do span com base na propriedade 'name' do filme
 
     // Adiciona a imagem e o span ao elemento div 'itemBox'
     itemBox.appendChild(img);
@@ -90,18 +90,18 @@ games.forEach((game) => {
 const showAvailableGames = () => {
     containerAvailable.innerHTML = '';
 
-    games.forEach((game) => {
+    proteins.forEach((proteina) => {
         const itemBox = document.createElement('div');
         itemBox.classList.add('itemBox');
 
         const img = document.createElement('img');
         img.classList.add('itemList', 'listAvailable');
-        img.src = game.imagem;
+        img.src = proteina.imagem;
         img.alt = 'img list';
 
         const span = document.createElement('span');
         span.classList.add('nome');
-        span.textContent = game.nome;
+        span.textContent = proteina.nome;
 
         itemBox.appendChild(img);
         itemBox.appendChild(span);
@@ -120,6 +120,38 @@ const imgAddedName = [];
 let tempImgAddedName;
 
 
+const createDynamicElement = (proteina) => {
+    const spanElement = document.createElement('span');
+    const divElement = document.createElement('div');
+    divElement.className = 'itemBox';
+
+    spanElement.className = 'numb';
+
+    const imgElement = document.createElement('img');
+    imgElement.className = 'itemList';
+    imgElement.classList.add('classUserList');
+    imgElement.src = game.imagem;
+    imgElement.alt = 'img list';
+
+    const btnRemoveElement = document.createElement('button');
+    btnRemoveElement.className = 'btnRemove';
+    btnRemoveElement.textContent = '-';
+
+    divElement.appendChild(spanElement);
+    divElement.appendChild(imgElement);
+    divElement.appendChild(btnRemoveElement);
+
+    listBox.appendChild(divElement);
+
+    imgElement.addEventListener('click', () => {
+        mostrarNomeProteina(proteina.nome);
+    });
+
+    return divElement;
+};
+
+
+/*
 const createDynamicElement = (imagePath) => {
     const spanElement = document.createElement('span');
     const divElement = document.createElement('div');
@@ -145,7 +177,7 @@ const createDynamicElement = (imagePath) => {
 
     return divElement;
 }
-
+*/
 let selectedElement = null;
 itemBox.addEventListener('click', (event) =>
 { 

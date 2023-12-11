@@ -1,7 +1,6 @@
 
 const imgsContainer = document.querySelector('.container');
 const input = document.querySelector('.sectionSearch');
-const valueInput = document.querySelector('.searchMovie')
 const hiddenOpcoes = document.querySelector('.hiddenOpcoes');
 const description = document.querySelector('.desc');
 const titleSelected = document.querySelector('.titleSelected');
@@ -12,6 +11,7 @@ const listBox = document.querySelector('.listBox');
 const btnFechar = document.querySelector('.btnFechar');
 const menuTitulos = document.querySelector('.menuTitulos');
 const titleOpc = document.querySelector('.titleOpc');
+
 
 class AddImagesSlider{
     constructor(imgArray, imgName){
@@ -34,6 +34,7 @@ class AddImagesSlider{
             });
     }
 };
+
 
 const images = [];
 
@@ -60,8 +61,84 @@ const games = [
 ]
 
 const containerAvailable = document.querySelector('.containerAvailable');
+/*
+games.forEach((game) => {
+    const itemBox = document.createElement('div');
+    itemBox.classList.add('itemBox');
+
+    const img = document.createElement('img');
+    img.classList.add('itemList', 'listAvailable');
+    img.src = game.imagem;
+    img.alt = 'img list';
+
+    const span = document.createElement('span');
+    span.classList.add('nome');
+    span.textContent = game.nome;
+
+    // Adiciona o botão "Adicionar"
+    const addButton = document.createElement('button');
+    addButton.classList.add('btnAdicionar');  // Adicione a classe que desejar ao botão
+    addButton.textContent = 'Adicionar';
+
+    // Adiciona os elementos ao itemBox
+    itemBox.appendChild(img);
+    itemBox.appendChild(span);
+    itemBox.appendChild(addButton);
+
+    containerAvailable.appendChild(itemBox);
+
+    addButton.addEventListener('click', () => {
+        // Adicione aqui o código para lidar com o clique no botão "Adicionar"
+        // Você pode usar a variável game para obter as informações do jogo correspondente
+        console.log('Botão Adicionar clicado para o jogo:', game.nome);
+    });
+});
+*/
+games.forEach((game) => {
+    const itemBox = document.createElement('div');
+    itemBox.classList.add('itemBox');
+
+    const img = document.createElement('img');
+    img.classList.add('itemList', 'listAvailable');
+    img.src = game.imagem;
+    img.alt = 'img list';
+
+    const span = document.createElement('span');
+    span.classList.add('nome');
+    span.textContent = game.nome;
+
+    // Adiciona o botão "Adicionar"
+    const addButton = document.createElement('button');
+    addButton.classList.add('btnAdicionar');
+    addButton.textContent = 'Adicionar';
+
+    // Adiciona os elementos ao itemBox
+    itemBox.appendChild(img);
+    itemBox.appendChild(span);
+    itemBox.appendChild(addButton);
+
+    // Adiciona o elemento itemBox ao containerAvailable
+    containerAvailable.appendChild(itemBox);
+
+    // Adiciona um evento de clique ao botão "Adicionar"
+    addButton.addEventListener('click', () => {
+        // Cria um elemento na listBox com as informações do jogo
+        const listBoxItem = createDynamicElement(game.imagem);
+        // Adiciona as informações do jogo ao elemento criado
+        listBoxItem.querySelector('.itemList').src = game.imagem;
+        listBoxItem.querySelector('.nome').textContent = game.nome;
+
+        // Adicione aqui a lógica para lidar com o clique no botão "Adicionar"
+        // Você pode usar a variável game para obter as informações do jogo correspondente
+        console.log('Botão Adicionar clicado para o jogo:', game.nome);
+
+        // Adiciona o elemento criado à listBox
+        listBox.appendChild(listBoxItem);
+    });
+});
 
 
+/*
 // Itera sobre cada filme na lista 'movies'
 games.forEach((game) => {
     
@@ -85,7 +162,7 @@ games.forEach((game) => {
     // Adiciona o elemento 'itemBox' ao elemento com a classe 'containerAvailable'
     containerAvailable.appendChild(itemBox);
 });
-
+*/
 
 const showAvailableGames = () => {
     containerAvailable.innerHTML = '';
@@ -119,7 +196,6 @@ let index;
 const imgAddedName = [];
 let tempImgAddedName;
 
-
 const createDynamicElement = (imagePath) => {
     const spanElement = document.createElement('span');
     const divElement = document.createElement('div');
@@ -145,6 +221,79 @@ const createDynamicElement = (imagePath) => {
 
     return divElement;
 }
+
+const resetInputVisibility = () =>
+{
+    input.classList.add('hiddenInput');
+    btnAddInicio.classList.remove('hiddenInput');
+    btnAddFim.classList.remove('hiddenInput');
+    btnAddMeio.classList.remove('hiddenInput');
+}
+
+// Função para lidar com o clique em botões
+const handleButtonClick = (actionType) =>
+{
+    // Verifica se a lista de filmes está definida e se o índice é válido
+    if (games && games.length > index && games[index])
+    {
+        // Verifica se o nome temporário já está na lista de nomes adicionados
+        if (imgAddedName.includes(tempImgAddedName))
+        {
+            // console.log('Elemento já presente na lista!');
+            // Mensagem para o usuário informando que o filme já está na lista
+            titleOpc.textContent = 'Elemento já presente na lista!';
+        }
+        else
+        {
+            // Executa ação com base no tipo de ação passado como parâmetro
+            switch (actionType)
+            {
+                case 'addInicio':
+                    AddInicioFunc();
+                    break;
+                case 'addFim':
+                    AddFimFunc();
+                    break;
+                case 'addMeio':
+                    confirmAddMeio();
+                    break;
+                default:
+                    console.error('Ação não reconhecida.');
+                    return;
+            }
+
+            // Adiciona o nome do filme à lista de nomes adicionados
+            imgAddedName.includes(movies[index].name) ? '' : imgAddedName.push(movies[index].name);
+
+            // console.log('imgAddedName: ' + imgAddedName);
+            // console.log('tempImgAddedName: ' + tempImgAddedName);
+        }
+    }
+    else
+    {
+        console.error('Movies está indefinido ou movies[index] é undefined.');
+    }
+
+    // Imprime a lista encadeada no console
+    console.log('Linked list: ');
+    userList.print();
+
+    // Imprime o tamanho da lista encadeada no console
+    console.log("Size List: " + userList.size());
+
+    // Ajusta os IDs dos elementos no DOM
+    document.querySelectorAll('.itemBox').forEach((el, idx) =>
+    {
+        el.id = idx - 10;
+    });
+
+    // Atualiza os índices exibidos no DOM
+    document.querySelectorAll('.numb').forEach((el, idx) =>
+    {
+        el.textContent = idx;
+    });
+}
+
 
 let selectedElement = null;
 itemBox.addEventListener('click', (event) =>
@@ -207,16 +356,19 @@ itemBox.addEventListener('click', (event) =>
         // This Section is for Github Pages***********************************************
     }
 });
+
+
 const handleClick = () =>
 {
     // Alterna entre as classes 'hiddenSideAvailable' e 'visibleSideAvailable' no menu de títulos
     menuTitulos.classList.toggle('hiddenSideAvailable');
     menuTitulos.classList.toggle('visibleSideAvailable');
 
-    // Adiciona ou remove a classe 'backAllTranslateHiddenOpcoes' no menu de opções escondido
+    
     if (menuTitulos.classList.contains('hiddenSideAvailable')) {
         hiddenOpcoes.classList.add('backAllTranslateHiddenOpcoes');
-    } else {
+    }
+     else {
         hiddenOpcoes.classList.remove('backAllTranslateHiddenOpcoes');
     }
 
@@ -225,4 +377,4 @@ const handleClick = () =>
     hiddenOpcoes.classList.toggle('translateHiddenOpcoes2');
 };
 document.querySelector('.botaoVerGames').addEventListener('click', handleClick);
-document.querySelector('.').addEventListener('click', handleClick);
+document.querySelector('.arrowImg').addEventListener('click', handleClick);
