@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="../css/styleNavbar.css">
     <link rel="stylesheet" href="../css/styleFooter.css">
     <link rel="stylesheet" href="../css/styleHeaps.css">
-    <script defer src="../js/jsNavbar.js"></script>
+    <script src="../js/jsNavbar.js" defer></script>
+    <script src="../js/jsVetores.js" defer></script>
 </head>
-
 <body>
+    <!-- Menu -->
     <header>
         <div class="logoTitle">
 
@@ -22,18 +23,18 @@
 
         <nav class="navbar hiddenMenu">
             <a href="../index.html">Home</a>
-            <a href=".../pages/vetores.html">Vetores</a>
-            <a href="../pages/listas.html">Listas</a>
-            <a href="../pages/pilhas.html">Pilhas</a>
-            <a href="../pages/filas.html">Filas</a>
-            <a href="#">Heaps</a>
-            <a href="../pages/arvores.html">Árvores</a>
-            <a href="../pages/hash.html">Hash Tabels</a>
-            <a href="../pages/grafos.html" active>Grafos</a>
+            <a href="vetores.html">Vetores</a>
+            <a href="listas.html">Listas</a>
+            <a href="pilhas.html">Pilhas</a>
+            <a href="filas.html">Filas</a>
+            <a href="heaps.html">Heaps</a>
+            <a href="arvores.html">Árvores</a>
+            <a href="hash.html">Hash Tabels</a>
+            <a href="grafos.html">Grafos</a>
         </nav>
         <img src="../images/menu.png" alt="menu" class="menuIcon">
     </header>
-    
+<!-- primeira seção-->
     <section class="content">
         <div class="section1">
             <div class="leftSide">
@@ -41,33 +42,67 @@
                     HEAPS
                 </h1>
                 <p class="msgInicial">
-                    Em ciência da computação, um heap é uma estrutura de dados especializada, baseada em árvore,
-                     que é essencialmente uma árvore quase completa. O heap é uma implementação maximamente 
-                     eficiente de um tipo de dados abstrato chamado de fila de prioridade e, de fato, as filas 
-                     de prioridade são geralmente chamadas de "heaps", independentemente de como elas podem ser
-                      implementadas. Em uma heap, o elemento de prioridade mais alta (ou mais baixa) é sempre
-                       armazenado na raiz
+                    Um heap é uma estrutura de dados em forma de árvore que mantém uma propriedade específica: 
+                    em um heap máximo, cada nó é maior ou igual aos seus filhos, e em um heap mínimo, cada nó é 
+                    menor ou igual aos seus filhos. Heaps são árvores binárias completas e eficientes para encontrar 
+                    e remover o elemento máximo ou mínimo. 
                 </p>
 
             </div>
+      
             <div class="rightSide">
                 <div class="sliderList">
-                    <div class="container" id="img">
-                        <input type="text" placeholder="Procurar jogo" class="searchGame">
-                    </div>
+                 explicação sobre o exodia
                 </div>
             </div>
         </div>
-        <!-- <div class="leftSide">
-            <div class="robot">
-                <img src="../images/imgHeaps/Group 16.jpg" alt="" class="bgHeap">
+
+<!-- Parte 2-->
+        <div class="section2">  
+            <div class="colunaEsquerda" >
+                <!-- cartas -->
+                <div class="exodia-container">
+                    <div class="linha1">
+                        <div id="card1">
+                           <img class="exodia-card" src="../images/imgHeaps/card1.png">
+                        </div>
+                    </div>
+                        <div class="linha2">
+                            <div id="card2">
+                                <img class="exodia-card"  src="../images/imgHeaps/card2.png">
+                            </div>
+                            <div id="card3">
+                                <img class="exodia-card" src="../images/imgHeaps/card3.png">
+                            </div>
+                        </div>
+                        <div class="linha3">
+                            <div id="card4">
+                                <img class="exodia-card" src="../images/imgHeaps/card4.png">
+                            </div>
+                            <div id="card5">
+                                <img  class="exodia-card" src="../images/imgHeaps/card5.png">
+                            </div>
+                        </div>
+                    </div>
             </div>
-        </div> -->
-        </div>
-        <div class="section2">
-            
-        </div>
-    </section>
+
+        <!-- Yugi -->
+            <div class="colunaDireita">
+                <div class="catchphrase">
+                        <h1 id="autor">
+                            Yugi Muta
+                        </h1>
+                            <p id="frase">
+                                “A raiva bloqueia o raciocínio de momentos que deveriamos agir com bravura.”
+                            </p>
+                    </div>
+                        <div class="yugi">
+                    <img src="../images/imgHeaps/yugi-2.png" alt="" class="bgYugi">
+                </div>
+            </div>
+    </div>  
+
+</section>
 
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
@@ -83,7 +118,8 @@
             <h3 class="dataName">DATA VIEWER</h3>
             <p class="phrase">
                 - Woodrow Wilson <br>
-                "Eu não apenas uso todo o cérebro que tenho, <br> mas todos os que consigo pegar emprestado."
+                "Eu não apenas uso todo o cérebro que tenho, <br>
+                mas todos os que consigo pegar emprestado."
             </p>
             <small class="lastText">
                 &copy;Copyright 2023, Data Viewer. All rights reserved
