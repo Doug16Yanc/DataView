@@ -73,8 +73,12 @@ adicionarBtn.addEventListener("click", (event) => {
         { ano: "1959", nome: "IBM 7030", imagem: "../images/imgFilas/stretch.jpg" },
         { ano: "1967", nome: "IBM 360/91", imagem: "../images/imgFilas/ibm360.jpg" },
         { ano: "1975", nome: "Altair 8080", imagem: "../images/imgFilas/altair8800.jpg" },
-        { ano: "1983", nome: "Macintosh", imagem: "../images/imgFilas/macintosh.jpg" },
-        { ano: "2000", nome: "Atuais", imagem: "../images/imgFilas/atuais.jpg" },
+        { ano: "1984", nome: "Macintosh", imagem: "../images/imgFilas/macintosh.jpg" },
+        { ano: "1986", nome: "Deskpro 386", imagem: "../images/imgFilas/deskpro.jpg" },
+        { ano: "2006", nome: "MacBook Pro", imagem: "../images/imgFilas/macbook.jpg" },
+        { ano: "2011", nome: "ChromeBook", imagem: "../images/imgFilas/chrome.jpg" },
+        { ano: "2016", nome: "Computador quântico", imagem: "../images/imgFilas/quantico.jpg" },
+        { ano: "2017", nome: "Bio computador", imagem: "../images/imgFilas/bioinformatica.jpg" }
     ];
 
     if (indiceAdicao < elementosParaAdicionar.length) {

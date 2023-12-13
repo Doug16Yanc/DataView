@@ -349,18 +349,6 @@ body
     border-top-right-radius: 12vh;
     border-bottom-right-radius: 12vh;
 }
-.numb
-{
-    font-size: 20px;
-    position: absolute;
-    background: #00691D;
-    padding: .5vh 1.2vh .5vh 1.2vh;
-    box-shadow: 5px 3px 6px #000;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10vh;
-}
 
 .bgList
 {
