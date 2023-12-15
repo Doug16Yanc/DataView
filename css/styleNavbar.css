@@ -44,7 +44,7 @@ header .navbar a.active, header .navbar a:hover{
     }
 }
 
-@media (max-width : 785px){
+@media (max-width : 980px){
     
     header .logo img{
         height: 6%;

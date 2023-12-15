@@ -1,38 +1,39 @@
-.content
+body
 {
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
     color: #fff;
 }
 
 .section1
 {
-    background-image: url('../images/bg6.png');
-    background-repeat: no-repeat;
+    background-image: url('../images/imgArvores/bg1.png');
     background-size: cover;
-    background-position: 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    
+    justify-content: space-between;
 }
-
 .leftSide
 {
+    display: flex;
     flex-direction: column;
-    margin-left: 5vh;
-    width: 50%;
-    /* background: #000; */
+    width: 40vh;
+
+}
+
+.contentTree
+{
+    width: 100%;
+    background: #000;
 }
 
 .section1 h1
 {
-    position: relative;
-    margin-top: 100px;
+    margin-top: 10vh;
     margin-left: 3.5vh;
     padding: 1vh 5vh;
-    font-size: 3vh;
+    font-size: max(20px, 2vh);
     width: fit-content;
     background: #0c0479;
     border-radius: 1vh;
@@ -40,51 +41,567 @@
 
 .section1 p
 {
-    position: relative;
-    margin-top: 5vh;
-    left: -5vh;
-    font-size: 22px;
-    width: 100%;
+    margin-left: 3.5vh;
+    margin-top: 10vh;
+    font-size: max(20px, 2vh);
+    width: 100vh;
     padding: 3vh;
     border-radius: 3vh;
     background: #00000079;
-
 }
-.shelfImg
+.rightSide
 {
-    position: relative;
-    margin: 2vh 10vh;
-    width: 70vh;
-}
-
-.rightSide{
-    position: relative;
+    align-items: center;
+    justify-content: center;
     display: flex;
-}
-
-
-
-
-.section2{
-    background-image: url('../images/imgArvores/arv1.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 0 0;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*
-
-.leftSide2{
-    flex-direction: row;
     width: 40%;
 }
-
-.leftSide2 h1{
-    font-size: 35px;
+.imgRightSide
+{
+    padding-left: 5vh;
+    width:  70%;
+    margin-top: -5vh;
 }
-*/
+
+.section2
+{
+    background-image: url('../images/imgArvores/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    position: relative;
+}
+
+.btnNode
+{
+    position: absolute;
+    padding: 2vh;
+    font-size: max(15px, 2vh);
+    border-radius: 5vh;
+    box-shadow: 1vh 1vh 2vh #0000009a;
+    font-weight: 500;
+    color: #fff;
+    z-index: 1;
+    transition: 500ms;
+}
+
+.btnNode:hover
+{
+    opacity: .8;
+    box-shadow: .5vh .5vh 1vh #0000007e;
+    padding: 2.5vh;
+
+}
+
+@media (max-width: 1440px)
+{
+    .btnNode
+    {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .btnNode
+    {
+        font-size: 15px;
+        padding: 1vh;
+    }
+
+    .btnNode:hover
+    {
+        opacity: .8;
+        box-shadow: .5vh .5vh 1vh #0000007e;
+        padding: 1.1vh;
+
+    }
+}
+
+.mainNode
+{
+    bottom: 0;
+    left: 45%;
+    background: #0c0479;
+}
+
+.branch1
+{
+    background: #00811C;
+    display: none;
+
+}
+
+.games
+{
+    bottom: 15%;
+    left: 30%;
+}
+
+.filmes
+{
+    bottom: 15%;
+    left: 45%;
+}
+
+.gadgets
+{
+    bottom: 15%;
+    left: 60%;
+}
+
+.branch2
+{
+    background: #814500;
+    display: none;
+}
+
+.rpg
+{
+    bottom: 30%;
+    left: 30%;
+}
+.fps
+{
+    bottom: 15%;
+    left: 15%;
+}
+
+.scifi
+{
+    bottom: 60%;
+    left: 35%;
+}
+
+.series
+{
+    bottom: 70%;
+    left: 55%;
+}
+
+.smartphones
+{
+    bottom: 30%;
+    left: 60%;
+}
+
+.smartwatches
+{
+    bottom: 15%;
+    left: 75%;
+}
+
+.branch3
+{
+    background: #9E1818;
+    display: none;
+}
+
+.cs
+{
+    bottom: 20%;
+    left: 5%;
+}
+
+.cod
+{
+    bottom: 35%;
+    left: 10%;
+}
+
+.witcher
+{
+    bottom: 47%;
+    left: 17%;
+}
+
+.dark
+{
+    bottom: 45%;
+    left: 30%;
+}
+
+.inter
+{
+    bottom: 85%;
+    left: 35%;
+}
+
+.matrix
+{
+    bottom: 75%;
+    left: 25%;
+}
+
+.mirror
+{
+    bottom: 75%;
+    left: 70%;
+}
+
+.robot
+{
+    bottom: 90%;
+    left: 60%;
+}
+
+.android
+{
+    bottom: 45%;
+    left: 65%;
+}
+
+.iphone
+{
+    bottom: 40%;
+    left: 75%;
+}
+
+.tic
+{
+    bottom: 20%;
+    left: 85%;
+}
+
+.apple
+{
+    bottom: 30%;
+    left: 80%;
+}
+
+.branch4
+{
+    background: #000;
+    border: #fff 1px solid;
+    display: none;
+}
+
+.s22
+{
+    bottom: 60%;
+    left: 65%;
+}
+
+.redmi
+{
+    bottom: 60%;
+    left: 75%;
+}
+
+.se
+{
+    bottom: 50%;
+    left: 85%;
+}
+
+.i2g
+{
+    bottom: 40%;
+    left: 85%;
+}
+
+.line
+{
+    position: absolute;
+    background: rgba(107, 80, 80, 0.651);
+    z-index: 0;
+    transition: 1s ease-in;
+}
+
+.activeLine
+{
+    box-shadow: 1px 1px 1vh rgb(255, 255, 255);
+    background: #a89494;
+    padding: 1px;
+}
+
+.l1H
+{
+    width: 12%;
+    height: .01vh;
+    bottom: 2.5%;
+    left: 33%;
+}
+.l1V
+{
+    width: .01vh;
+    height: 12.5%;
+    bottom: 2.5%;
+    left: 33%;
+}
+
+.l2H
+{
+    width: 10.8%;
+    height: .01vh;
+    bottom: 2.5%;
+    left: 52.3%;
+}
+.l2V
+{
+    width: .01vh;
+    height: 12.5%;
+    bottom: 2.5%;
+    left: 63%;
+}
+
+.l3V
+{
+    width: .01vh;
+    height: 10%;
+    bottom: 5%;
+    left: 49%;
+}
+
+.l4H
+{
+    width: 11%;
+    height: .01vh;
+    bottom: 17.5%;
+    left: 19%;
+}
+.l5H
+{
+    width: 7%;
+    height: .01vh;
+    bottom: 17.5%;
+    left: 8%;
+}
+.l5V
+{
+    width: .01vh;
+    height: 2.5%;
+    bottom: 17.5%;
+    left: 8%;
+}
+.l6V
+{
+    width: .01vh;
+    height: 15%;
+    bottom: 20%;
+    left: 17%;
+}
+.l7V
+{
+    width: .01vh;
+    height: 10%;
+    bottom: 20%;
+    left: 32.5%;
+}
+.l8V
+{
+    width: .01vh;
+    height: 10%;
+    bottom: 35%;
+    left: 33%;
+}
+.l9V
+{
+    width: .01vh;
+    height: 14%;
+    bottom: 33%;
+    left: 22%;
+}
+.l9H
+{
+    width: 8%;
+    height: .01vh;
+    bottom: 33%;
+    left: 22%;
+}
+
+.l10V
+{
+    width: 4.5%;
+    height: .01vh;
+    bottom: 62%;
+    left: 43.5%;
+}
+.l10H
+{
+    width: .01vh;
+    height: 42%;
+    bottom: 20%;
+    left: 48%;
+}
+
+.l11V
+{
+    width: 4%;
+    height: .01vh;
+    bottom: 72%;
+    left: 51%;
+}
+.l11H
+{
+    width: .01vh;
+    height: 52%;
+    bottom: 20%;
+    left: 51%;
+}
+
+.l12H
+{
+    width: 7%;
+    height: .01vh;
+    bottom: 77%;
+    left: 30%;
+}
+.l12V
+{
+    width: .01vh;
+    height: 12%;
+    bottom: 65%;
+    left: 37%;
+}
+.l13V
+{
+    width: .01vh;
+    height: 20%;
+    bottom: 65%;
+    left: 42%;
+}
+.l14V
+{
+    width: .01vh;
+    height: 10%;
+    bottom: 20%;
+    left: 62%;
+}
+.l15H
+{
+    width: 8.5%;
+    height: .01vh;
+    bottom: 18%;
+    left: 66.4%;
+}
+.l16H
+{
+    width: 4%;
+    height: .01vh;
+    bottom: 18%;
+    left: 84%;
+}
+.l16V
+{
+    height: 2%;
+    width: .01vh;
+    bottom: 18%;
+    left: 88%;
+}
+.l17H
+{
+    width: 9.2%;
+    height: .01vh;
+    bottom: 32.5%;
+    left: 68.5%;
+}
+.l17V
+{
+    height: 7.6%;
+    width: .01vh;
+    bottom: 32.5%;
+    left: 77.65%;
+}
+
+.l18V
+{
+    height: 10%;
+    width: .01vh;
+    bottom: 35%;
+    left: 67%;
+}
+
+.l19V
+{
+    height: 9.9%;
+    width: .01vh;
+    bottom: 20%;
+    left: 82%;
+}
+
+.l20V
+{
+    height: 17%;
+    width: .01vh;
+    bottom: 75%;
+    left: 58%;
+}
+
+.l20H
+{
+    width: 2%;
+    height: .01vh;
+    bottom: 92%;
+    left: 58%;
+}
+
+.l21H
+{
+    width: 14%;
+    height: .01vh;
+    bottom: 72%;
+    left: 60%;
+}
+
+.l22V
+{
+    height: 3%;
+    width: .01vh;
+    bottom: 72%;
+    left: 74%;
+}
+
+.l23V
+{
+    height: 5%;
+    width: .01vh;
+    bottom: 55%;
+    left: 78%;
+}
+
+.l23H
+{
+    width: 9%;
+    height: .01vh;
+    bottom: 55%;
+    left: 69%;
+}
+
+.l24V
+{
+    height: 10%;
+    width: .01vh;
+    bottom: 50%;
+    left: 69%;
+}
+
+.l25V
+{
+    height: 8%;
+    width: .01vh;
+    bottom: 44%;
+    left: 80%;
+}
+
+.l25H
+{
+    width: 5%;
+    height: .01vh;
+    bottom: 52%;
+    left: 80%;
+}
+
+.l26H
+{
+    width: 5%;
+    height: .01vh;
+    bottom: 42%;
+    left: 80%;
+}
+
+.show
+{
+    display: block;
+}

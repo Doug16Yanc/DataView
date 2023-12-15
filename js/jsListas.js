@@ -276,7 +276,196 @@ const movies = [
                     login no sistema para encontrar a carta, mas precisa enfrentar o inesperado.
                     A verdade é mais dura do que ele jamais poderia imaginar...—Danny Rosenbluth
                 `
-    }
+    },
+    {
+        id : 10,
+        bg : '../images/imgListas/list/blade.jpg',
+        completeTitle : 'Blade Runner - O caçador de androides',
+        year : '(1982)',
+        name : 'Blade Runner',
+        pathFile : '../images/imgListas/list/blade.jpg',
+        desc : `
+                No início do século XXI, uma grande corporação desenvolve um robô que é mais 
+                forte que o ser humano e se equiparando em inteligência. São conhecidos como
+                replicantes e utilizados como escravos na colonização e exploração de outros 
+                planetas. Mas, quando um grupo dos robôs mais evoluídos provoca um motim, 
+                em uma colônia fora da Terra, este incidente faz os replicantes serem considerados 
+                ilegais na Terra, sob pena de morte. Para tanto, policiais de um esquadrão de elite
+                conhecido como Blade Runner, têm ordens para exterminar replicantes encontrados 
+                dentro do planeta. O longa de ficção científica é dirigido por Ridley Scott e conta 
+                com Rutger Hauer e Sean Young no elenco.
+            `
+    },
+    {
+        id : 11,
+        bg : '../images/imgListas/list/robocop.jpg',
+        completeTitle : 'Robocop - O Policial do Futuro',
+        year : '(1987)',
+        name : 'Robocop',
+        pathFile : '../images/imgListas/list/robocop.jpg',
+        desc : `
+                Depois de ter sido mortalmente ferido em cerco a marginais, 
+                policial (Peter Weller) transformado num misto de máquina e 
+                homem a serviço da justiça, quando tem que enfrentar uma gangue 
+                disposta a dominar a cidade, sob a custódia legal de poderoso executivo.
+                Robocop inclui temáticas como corrupção, ganância, privatização,
+                distopia e gentrificação.
+        
+            `
+    },
+    {
+        id : 12,
+        bg : '../images/imgListas/list/machina.jpg',
+        completeTitle : 'Ex Machina - Instinto Artificial',
+        year : '(2015)',
+        name : 'Ex Machina',
+        pathFile : '../images/imgListas/list/machina.jpg',
+        desc : `
+            Dirigido por Alex Garland, o suspense apresenta Caleb (Domhnall Gleeson), um jovem desenvolvedor
+            de software que ganha um concurso na empresa onde trabalha para passar um final de semana na 
+            casa de Nathan Bateman (Oscar Isaac), o recluso e extraordinário presidente da empresa, contudo, 
+            tudo não passa de um teste que Caleb deve ser submetido com a última criação de Nathan, 
+            Ava(Alicia Vikander), um robô com inteligência artificial.
+
+            `
+    },
+    {
+        id : 13,
+        bg : '../images/imgListas/list/interestellar.jpg',
+        completeTitle : 'Interestelar',
+        year : '(2013)',
+        name : 'Interestelar',
+        pathFile : '../images/imgListas/list/interestellar.jpg',
+        desc : `
+                O longa de Christopher Nolan apresenta uma terra inóspita onde todos os recursos 
+                se esgotaram, desse modo, um grupo de astronautas recebe a missão de verificar 
+                possíveis planetas para receberem a população mundial, perpetuando assim a espécie, 
+                há diversas referências à teoria da relatividade de Einstein e os fenômenos dos 
+                buracos negros. O filme conta com Matthew McConaughey, Anne Hathaway, Marlon Sanders, 
+                Wes Bentley e Jessica Chastain. 
+
+            `
+    },
+    {
+        id : 14,
+        bg : '../images/imgListas/list/wall.jpg',
+        completeTitle : 'Wall-e',
+        year : '(2008)',
+        name : 'Wall-e',
+        pathFile : '../images/imgListas/list/wall.jpg',
+        desc : `
+                Wall-e (2008) é uma animação da Disney e da Pixar, de 97 minutos. Esse filme, cujo roteiro e direção 
+                foram feitos por Andrew Stanton. O filme se inicia no ano de 2700, tendo como cenário principal o nosso 
+                planeta, basicamente desabitado. Ele se apresenta como um grande depósito de lixo, no qual o personagem 
+                principal do filme, Wall-e (Waste Allocation Load Lifters - Earth – Levantador de Carga para Alocação de 
+                Lixo – Classe 'Terra'), trabalha para compactar e organizar todo esse entulho, sozinho, uma vez que 
+                seus companheiros de profissão já se encontram estragados. Assim, ele e sua barata de estimação são 
+                os únicos habitantes daquele planeta cinzento.Wall-e, assim como outros robôs, foram enviados para a 
+                Terra pela empresa BNL para executar esse serviço. Enquanto isso, os seres humanos se protegem de toda 
+                a toxidez de nosso planeta na estação espacial Axiom. O plano era que ficassem somente por cinco anos ali,
+                esperando a conclusão de tal trabalho para retornarem ao nosso planeta; mas acabam ficando aproximadamente
+                700 anos. Para verificar se a Terra já está habitável, a empresa envia robôs para lá, sendo um deles a Eva
+                (Examinadora de Vegetação Alienígena), que se apaixonará pelo personagem principal (e vice-versa).
+
+
+            `
+    },
+    {
+        id : 15,
+        bg : '../images/imgListas/list/ely.jpg',
+        completeTitle : 'Elysium',
+        year : '(2013)',
+        name : 'Elysium',
+        pathFile : '../images/imgListas/list/ely.jpg',
+        desc : `
+                No ano de 2159, existem duas classes de pessoas: os ricos e abastados, 
+                que vivem numa estação espacial chamada Elysium, e o resto, que vive numa 
+                Terra arruinada e superpopulada. A Secretária Rhodes (Jodie Foster), uma 
+                oficial durona do governo, fará de tudo para garantir que as leis anti-imigração 
+                sejam obedecidas à risca, para preservar o luxuoso estilo de vida dos cidadãos de Elysium. 
+                Isso não impedirá o povo da Terra de tentar entrar, de qualquer forma possível. 
+                Quando o azarado Max (Matt Damon) é colocado contra a parede, ele concorda em participar
+                numa assustadora missão que, se bem sucedida, não só salvará sua vida, mas pode trazer
+                igualidade nestes mundos polarizados. O elenco conta com Matt Damon, Wagner Moura,
+                Jodie Foster e Alice Braga.
+            `
+    },
+    
+    {
+        id : 16,
+        bg : '../images/imgListas/list/matrix.jpg',
+        completeTitle : 'The Matrix',
+        year : '(1999)',
+        name : 'The Matrix',
+        pathFile : '../images/imgListas/list/matrix.jpg',
+        desc : `
+                Em um futuro próximo, Thomas Anderson (Keanu Reeves), um jovem programador que 
+                mora em um cubículo escuro é atormentado por sonhos estranhos nos quais encontra-se
+                conectado por cabos contra sua própria vontade em um sistema composto por computadores
+                futuristas. Por meio do encontro com os misteriosos Morpheus (Laurence Fishburne) e Trinity 
+                (Carrie-Anne Moss), Thomas descobre que é, assim como outras pessoas, vítima da Matrix, um 
+                super sistema inteligente e artificial que manipula a mente dos indivíduos e cria a ilusão de
+                um mundo real enquanto usa os cérebros e corpos das pessoas para produzir energia. Morpheus, 
+                entretanto, acredita que Thomas é Neo, o aguardado messias que será capaz de enfrentar a Matrix
+                e conduzir de volta as pessoas à realidade e à liberdade. 
+
+
+            `
+    },
+    {
+        id : 17,
+        bg : '../images/imgListas/list/gravity.jpg',
+        completeTitle : 'Gravidade',
+        year : '(2013)',
+        name : 'Gravidade',
+        pathFile : '../images/imgListas/list/gravity.jpg',
+        desc : `
+                Matt Kowalski (George Clooney) é um astronauta experiente que está em missão de conserto 
+                ao telescópio Hubble juntamente com a doutora Ryan Stone (Sandra Bullock). Ambos são 
+                surpreendidos por uma chuva de destroços decorrente da destruição de um satélite por um 
+                míssil russo, que faz com que sejam jogados no espaço sideral. Sem qualquer apoio da base 
+                terrestre da NASA, eles precisam encontrar um meio de sobreviver em meio a um ambiente
+                completamente inóspito para a vida humana.
+
+            `
+    },
+    {
+        id : 18,
+        bg : '../images/imgListas/list/exterminator.jpg',
+        completeTitle : 'Schwarzenegger - O Exterminador do Futuro',
+        year : '(1984)',
+        name : 'O Exterminador do Futuro',
+        pathFile : '../images/imgListas/list/exterminator.jpg',
+        desc : `
+                Num futuro próximo, a guerra entre humanos e máquinas foi deflagrada. 
+                Com a tecnologia a seu dispor, um plano inusitado é arquitetado pelas
+                máquinas ao enviar para o passado um andróide (Arnold Schwarzenegger) 
+                com a missão de matar a mãe (Linda Hamilton) daquele que viria a se 
+                transformar num líder e seu pior inimigo. Contudo, os humanos também 
+                conseguem enviar um representante (Michael Biehn) para proteger a mulher 
+                e tentar garantir o futuro da humanidade.
+
+            `
+    },
+   
+    {
+    id : 19,
+    bg : '../images/imgListas/list/future.jpg',
+    completeTitle : 'De Volta para o Futuro',
+    year : '(1985)',
+    name : 'De Volta para o Futuro',
+    pathFile : '../images/imgListas/list/future.jpg',
+    desc : `
+            Dirigida por  Robert Zemeckis e estrelada por Michael J. Fox e Christopher Lloyd. 
+            O protagonista Marty McFly (Michael J. Fox) aciona acidentalmente uma máquina do
+            tempo construída pelo cientista Doc Brown (Christopher Lloyd) em um Delorean,
+            retornando aos anos 1950, onde conhece sua mãe antes do casamento com seu pai,
+            que se apaixona por ele. Tal eventualidade colocaria em risco sua própria
+            existência, pois seria pelos paradoxos de causalidade, isso o força a servir
+                de cupido entre seus pais.
+        `
+}
+
 ]
 
 // Seleciona o elemento HTML com a classe 'containerAvailable' usando o método querySelector
@@ -818,6 +1007,7 @@ listBox.addEventListener('click', (event) =>
         }
 
         // Itera sobre os filmes para encontrar o correspondente ao item clicado
+        /*
         for (let i = 0; i < movies.length; i++)
         {
             let url = movies[i].pathFile;
@@ -840,9 +1030,10 @@ listBox.addEventListener('click', (event) =>
                 console.log("Elemento clicado!");
             }
         }
+        */
         
         //*********************** This Section is for Github Pages. Uncomment if Necessary ***********************
-        /*for (let i = 0; i < movies.length; i++)
+        for (let i = 0; i < movies.length; i++)
         {
             let url = movies[i].pathFile;
             let itemBoxSrc = itemBox.src
@@ -873,7 +1064,7 @@ listBox.addEventListener('click', (event) =>
                 bgList.classList.toggle('bgListAnimation');
                 boxDesc.classList.toggle('animationBoxDesc');
             }
-        }*/
+        }
         //*********************** This Section is for Github Pages. Uncomment if Necessary ***********************
     }
 });

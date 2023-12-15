@@ -482,6 +482,15 @@ body
     box-shadow: .5vh .5vh 5vh #000;
 }
 
+@media (max-width: 1440px)
+{
+    .info
+    {
+            transform: translateX(-50%);
+
+    }
+}
+
 .divClose
 {
     position: absolute;
@@ -565,7 +574,7 @@ body
     justify-content: start;
     padding: 2vh;
     border-radius: 1vh;
-    padding-top: 8vh;
+    padding-top: 5vh;
 }
 
 .liAutor
@@ -583,6 +592,12 @@ body
     font-weight: 600;
 }
 
+.liPag
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
 .autorContent
 {
     margin-left: 1vh;
@@ -590,6 +605,13 @@ body
 }
 
 .anoContent
+{
+    margin-left: 1vh;
+    font-weight: 500;
+
+}
+
+.pageContent
 {
     margin-left: 1vh;
     font-weight: 500;

@@ -2,73 +2,221 @@
 <html lang="en">
 
 <head>
+    <!-- Configuração básica do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arvores</title>
+
+    <!-- Links para os estilos e scripts utilizados na página -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styleNavbar.css">
     <link rel="stylesheet" href="../css/styleFooter.css">
     <link rel="stylesheet" href="../css/styleArvores.css">
     <script defer src="../js/jsNavbar.js"></script>
+    <script defer src="../js/jsArvores.js"></script>
 </head>
 
 <body>
+    <!-- Cabeçalho da página -->
     <header>
         <div class="logoTitle">
-
-            <a href="#" class="logo"><img src="../images/logo.png" width="45px"></a>
+            <!-- Logo e título da página -->
+            <a href="../index.html" class="logo"><img src="../images/logo.png" width="45px"></a>
             <p class="titlePage">DATA VIEWER / ÁRVORES</p>
         </div>
 
+        <!-- Barra de navegação -->
         <nav class="navbar hiddenMenu">
             <a href="../index.html">Home</a>
-            <a href=".../pages/vetores.html">Vetores</a>
+            <a href="../pages/vetores.html">Vetores</a>
             <a href="../pages/listas.html">Listas</a>
             <a href="../pages/pilhas.html">Pilhas</a>
-            <a href="#">Filas</a>
+            <a href="../pages/filas.html">Filas</a>
             <a href="../pages/heaps.html">Heaps</a>
-            <a href="../pages/arvores.html">Árvores</a>
-            <a href="../pages/hash.html">Hash Tabels</a>
+            <a href="#">Árvores</a>
+            <a href="../pages/hash.html">Hash Tables</a>
             <a href="../pages/grafos.html">Grafos</a>
         </nav>
+
+        <!-- Ícone do menu para dispositivos móveis -->
         <img src="../images/menu.png" alt="menu" class="menuIcon">
     </header>
-    <section class="content">
-        <div class="section1">
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+        <!-- Seção 1 da página -->
+        <section class="section1">
             <div class="leftSide">
-                <h1 class="pageTitle">
-                    ÁRVORES
-                </h1>
+                <!-- Título e descrição sobre árvores -->
+                <h1 class="title">ÁRVORES</h1>
                 <p class="msgInicial">
-                    As árvores representam um dos tipos de estruturas de dados mais importantes da computação. 
-                    A estrutura de uma árvore define uma organização de elementos dispostos de forma hierárquica. 
-                    Os nós de uma árvore representam espaços onde podem ser armazenados diversos tipos de informações,
-                    As arestas representam a forma com a qual os nós se 
-                    conectam, e essa relação depende totalmente da forma como a árvore é utilizada e do tipo de 
-                    informação que os nós da árvore armazenam.
+                    As árvores representam um dos tipos de estruturas de dados mais importantes da computação. A
+                    estrutura de uma árvore
+                    define uma organização de elementos dispostos de forma hierárquica. Os nós de uma árvore representam
+                    espaços onde podem
+                    ser armazenados diversos tipos de informações, As arestas representam a forma com a qual os nós se
+                    conectam, e essa
+                    relação depende totalmente da forma como a árvore é utilizada e do tipo de informação que os nós da
+                    árvore armazenam.
+                    Pesquisar na web é como explorar uma árvore de conhecimento. O ponto de partida é o tópico geral, e
+                    cada busca é um
+                    caminho pelos ramos, indo de informações amplas para detalhes específicos. Cada clique aprofunda a
+                    jornada pela vastidão
+                    da internet. Experimente buscar sobre tecnologia e cultura pop.
                 </p>
-
             </div>
+
+            <!-- Imagem associada à descrição -->
             <div class="rightSide">
-                <div class="sliderList">
-                    <div class="container" id="img">
-                        <img src="..images/imgArvores/cyber-removebg-preview.png" alt="">
-                        <input type="text" placeholder="Procurar jogo" class="searchGame">
-                    </div>
-                </div>
+                <img src="../images/imgArvores/tree.png" alt="" class="imgRightSide">
             </div>
-        </div>
-        <div class="section2">
-        <!--  <div class="leftSide">
-                <div class="robot">
-                    <img src="../images/imgArvores/arv1.jpg" alt="" class="bgTree">
-                </div>
-            </div>
-            </div> -->
-        </div>
-    </section>
+        </section>
 
+        <!-- Seção 2 da página -->
+        <section class="section2">
+            <div class="contentTree">
+                <!-- Botões representando os nós e ramos da árvore -->
+                <!-- Classes como "gadgets", "filmes", "games" representam os ramos principais -->
+                <!-- Classes como "smartwatches", "smartphones", "series", "scifi", "fps", "rpg", "android", "iphone" representam ramos secundários -->
+                <!-- Cada botão é associado a uma classe específica que representa a categoria da informação -->
+                <!-- Linhas de conexões representam as relações entre os nós -->
+
+                <!-- Nó principal -->
+                <button class="mainNode btnNode">
+                    TecnoPop
+                </button>
+
+                <!-- Primeira classe de ramos -->
+                <button class="branch1 gadgets btnNode">
+                    Gadgets
+                </button>
+                <button class="branch1 filmes btnNode">
+                    Filmes/Séries
+                </button>
+                <button class="branch1 games btnNode">
+                    Games
+                </button>
+
+                <!-- Segunda classe de ramos -->
+                <button class="branch2 smartwatches btnNode gadgetsBranch">
+                    Smartwatches
+                </button>
+                <button class="branch2 smartphones btnNode gadgetsBranch">
+                    Smartphones
+                </button>
+                <button class="branch2 series btnNode filmesBranch">
+                    Séries
+                </button>
+                <button class="branch2 scifi btnNode filmesBranch">
+                    Filmes Sci-Fi
+                </button>
+                <button class="branch2 fps btnNode gamesBranch">
+                    FPS
+                </button>
+                <button class="branch2 rpg btnNode gamesBranch">
+                    RPG
+                </button>
+
+                <!-- Terceira classe de ramos -->
+                <button class="branch3 apple btnNode smartwatchBranch">
+                    Apple Watch
+                </button>
+                <button class="branch3 tic btnNode smartwatchBranch">
+                    TicWatch
+                </button>
+                <button class="branch3 iphone btnNode smartphonesBranch">
+                    iPhone
+                </button>
+                <button class="branch3 android btnNode smartphonesBranch">
+                    Android
+                </button>
+                <button class="branch3 robot btnNode scifiSeries">
+                    Mr. Robot
+                </button>
+                <button class="branch3 mirror btnNode scifiSeries">
+                    Black Mirror
+                </button>
+                <button class="branch3 matrix btnNode scifiFilmes">
+                    Matrix
+                </button>
+                <button class="branch3 inter btnNode scifiFilmes">
+                    Interestellar
+                </button>
+                <button class="branch3 dark btnNode rpgGames">
+                    Dark Souls
+                </button>
+                <button class="branch3 witcher btnNode rpgGames">
+                    The Witcher
+                </button>
+                <button class="branch3 cod btnNode fpsGames">
+                    Call of Duty
+                </button>
+                <button class="branch3 cs btnNode fpsGames">
+                    CS Go
+                </button>
+
+                <!-- Quarta classe de ramos -->
+                <button class="branch4 i2g btnNode iphoneBranch">
+                    iPhone 2G
+                </button>
+                <button class="branch4 se btnNode iphoneBranch">
+                    iPhone SE
+                </button>
+                <button class="branch4 redmi btnNode androidBranch">
+                    Redmi 12s
+                </button>
+                <button class="branch4 s22 btnNode androidBranch">
+                    Galaxy S22
+                </button>
+
+                <!-- Linhas de conexão entre os nós -->
+                <!-- Classes como "tectopToB1", "gamesToB2", "fpsToB3", etc., representam as conexões entre os nós -->
+
+                <div class="line l1H tectopToB1"></div>
+                <div class="line l1V tectopToB1"></div>
+                <div class="line l2H tectopToB1"></div>
+                <div class="line l2V tectopToB1"></div>
+                <div class="line l3V tectopToB1"></div>
+                <div class="line l4H gamesToB2"></div>
+                <div class="line l5H fpsToB3"></div>
+                <div class="line l5V fpsToB3"></div>
+                <div class="line l6V fpsToB3"></div>
+                <div class="line l7V gamesToB2"></div>
+                <div class="line l8V rpgToB3"></div>
+                <div class="line l9V rpgToB3"></div>
+                <div class="line l9H rpgToB3"></div>
+                <div class="line l10V filmesToB2"></div>
+                <div class="line l10H filmesToB2"></div>
+                <div class="line l11V filmesToB2"></div>
+                <div class="line l11H filmesToB2"></div>
+                <div class="line l12V scifiToB3"></div>
+                <div class="line l12H scifiToB3"></div>
+                <div class="line l13V scifiToB3"></div>
+                <div class="line l14V gadgetsToB2"></div>
+                <div class="line l15H gadgetsToB2"></div>
+                <div class="line l16V smartwatchesToB3"></div>
+                <div class="line l16H smartwatchesToB3"></div>
+                <div class="line l17V smartphonesToB3"></div>
+                <div class="line l17H smartphonesToB3"></div>
+                <div class="line l18V smartphonesToB3"></div>
+                <div class="line l19V smartwatchesToB3"></div>
+                <div class="line l20V seriesToB3"></div>
+                <div class="line l20H seriesToB3"></div>
+                <div class="line l21H seriesToB3"></div>
+                <div class="line l22V seriesToB3"></div>
+                <div class="line l23V androidToB4"></div>
+                <div class="line l23H androidToB4"></div>
+                <div class="line l24V androidToB4"></div>
+                <div class="line l25V iphoneToB4"></div>
+                <div class="line l25H iphoneToB4"></div>
+                <div class="line l26H iphoneToB4"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
     <footer>
+        <!-- Elemento SVG para criar uma onda no rodapé -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
             <path fill="#060429" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,58.7C480,64,600,128,720,160C840,
                     192,960,192,1080,170.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,
@@ -76,20 +224,25 @@
                     320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
+
+        <!-- Corpo do rodapé -->
         <div class="footerBody">
+            <!-- Logo do rodapé -->
             <img src="../images/logo.png" alt="logo" class="logoFooter">
 
+            <!-- Nome da aplicação -->
             <h3 class="dataName">DATA VIEWER</h3>
+
+            <!-- Citação no rodapé -->
             <p class="phrase">
                 - Woodrow Wilson <br>
                 "Eu não apenas uso todo o cérebro que tenho, <br> mas todos os que consigo pegar emprestado."
             </p>
+
+            <!-- Texto de direitos autorais -->
             <small class="lastText">
                 &copy;Copyright 2023, Data Viewer. All rights reserved
             </small>
-
-        </div>
-
         </div>
     </footer>
 </body>

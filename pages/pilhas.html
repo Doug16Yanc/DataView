@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
+    <!-- Configuração do documento HTML5 com codificação e viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Pilhas</title>
+
+    <!-- Links para arquivos externos de estilos CSS e scripts JavaScript -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styleNavbar.css">
     <link rel="stylesheet" href="../css/styleFooter.css">
@@ -14,13 +19,14 @@
 </head>
 
 <body>
+    <!-- Cabeçalho da página com logo, título e navegação -->
     <header>
         <div class="logoTitle">
-
-            <a href="#" class="logo"><img src="../images/logo.png" width="45px"></a>
+            <a href="../index.html" class="logo"><img src="../images/logo.png" width="45px"></a>
             <p class="titlePage">DATA VIEWER / PILHAS</p>
         </div>
 
+        <!-- Menu de navegação -->
         <nav class="navbar hiddenMenu">
             <a href="../index.html">Home</a>
             <a href="../pages/vetores.html">Vetores</a>
@@ -29,12 +35,15 @@
             <a href="../pages/filas.html">Filas</a>
             <a href="../pages/heaps.html">Heaps</a>
             <a href="../pages/arvores.html">Árvores</a>
-            <a href="../pages/hash.html">Hash Tabels</a>
+            <a href="../pages/hash.html">Hash Tables</a>
             <a href="../pages/grafos.html" active>Grafos</a>
         </nav>
+
+        <!-- Ícone do menu -->
         <img src="../images/menu.png" alt="menu" class="menuIcon">
     </header>
 
+    <!-- Seção de conteúdo principal -->
     <section class="content">
         <div class="section1">
             <div class="leftSide">
@@ -43,35 +52,41 @@
                 </h1>
                 <p class="msgInicial">
                     Uma pilha é uma coleção de elementos onde você só pode adicionar (empilhar,
-                    remover desempilhar) itens do topo. O último item que você adiciona é o 
-                    primeiro a ser removido. Imagina uma pilha de pratos: você adiciona um prato 
-                    em cima da pilha e tira sempre o que está no topo. Isso é uma pilha na 
+                    remover desempilhar) itens do topo. O último item que você adiciona é o
+                    primeiro a ser removido. Imagina uma pilha de pratos: você adiciona um prato
+                    em cima da pilha e tira sempre o que está no topo. Isso é uma pilha na
                     programação, uma forma de organizar e acessar dados. Que tal construir uma pilha de livros?
-                </p>            
+                </p>
             </div>
-            <img src="../images/imgPilhas/caracter1.png" alt="" class="caracter1">
 
+            <!-- Imagem ilustrativa -->
+            <img src="../images/imgPilhas/caracter1.png" alt="" class="caracter1">
         </div>
+
         <div class="section2">
             <div class="leftSide2">
+                <!-- Imagem ilustrativa -->
                 <img src="../images/imgPilhas/caracter2.png" alt="" class="caracter2">
-                <div class="containerMsg2">
 
+                <!-- Conteúdo sobre os livros -->
+                <div class="containerMsg2">
                     <h1 class="titleMsg">
                         Sobre Nossos Livros
                     </h1>
                     <p class="msgSec">
                         Cyberpunk: fusão de alta tecnologia e baixa qualidade de vida,
                         inspirado na cibernética e no punk alternativo. Este
-                        gênero descreve um futuro distópico que lembra um fliperama 
+                        gênero descreve um futuro distópico que lembra um fliperama
                         sujo dos anos 80/90, com vida caótica, máquinas barulhentas
-                        e atmosfera poluída. Apesar disso, fascina os habitantes com 
+                        e atmosfera poluída. Apesar disso, fascina os habitantes com
                         promessas de tecnologias avançadas, incorporando ciência
                         avançada e disrupção no sistema civil.
                     </p>
                 </div>
             </div>
+
             <div class="rightSide2">
+                <!-- Menu de livros disponíveis (inicialmente oculto) -->
                 <div class="hiddenMenuBooks hidden">
                     <div class="divClose">
                         <img src="../images/imgPilhas/rightArrow.png" alt="" class="close">
@@ -82,103 +97,28 @@
                         </h2>
                     </div>
                     <div class="contentHiddenMenu">
-                        <!-- <div class="bookContent">
-                            <img src="../images/imgPilhas/books/livro1.png" alt="" class="bookMenu bookMenuHover">
-                            <p class="titleBookHidden">Título</p>
-                            <div class="btns">
-                                <button class="btnAdd">Adicionar</button>
-                            </div>
-                        </div>
-                        <div class="bookContent">
-                            <img src="../images/imgPilhas/books/livro2.png" alt="" class="bookMenu bookMenuHover">
-                            <p class="titleBook">Título</p>
-                            <button class="btnAdd">Adicionar</button>
-                        </div>
-                        <div class="bookContent">
-                            <img src="../images/imgPilhas/books/livro3.png" alt="" class="bookMenu bookMenuHover">
-                            <p class="titleBook">Título</p>
-                            <button class="btnAdd">Adicionar</button>
-                        </div>
-                        <div class="bookContent">
-                            <img src="../images/imgPilhas/books/livro4.png" alt="" class="bookMenu bookMenuHover">
-                            <p class="titleBook">Título</p>
-                            <button class="btnAdd">Adicionar</button>
-                        </div>
-                        <div class="bookContent">
-                            <img src="../images/imgPilhas/books/livro5.png" alt="" class="bookMenu bookMenuHover">
-                            <p class="titleBook">Título</p>
-                            <button class="btnAdd">Adicionar</button>
-                        </div>
-                        <div class="bookContent">
-                            <img src="../images/imgPilhas/books/livro6.png" alt="" class="bookMenu bookMenuHover">
-                            <p class="titleBook">Título</p>
-                            <button class="btnAdd">Adicionar</button>
-                        </div> -->
+                        <!-- Menu de livros aqui -->
                     </div>
                 </div>
+
+                <!-- Botão para mostrar o menu de livros -->
                 <button class="botaoVerLivros">
                     Ver livros disponíveis
                 </button>
+
+                <!-- Título e botão para remover livros -->
                 <div class="titleLivros">
                     <h2>
                         LIVROS CYBERPUNK
                     </h2>
                     <button class="btnRemove hiddenInfo">Remover</button>
                 </div>
+
+                <!-- Prateleira de livros -->
                 <div class="shelfDiv">
                     <div class="shelfTop">
                         <div class="divBooks">
-                            <!-- <div class="bookUser info">
-                                <div class="imgBook books zoom">
-                                    
-                                    <img src="../images/imgPilhas/books/livro2.png" alt="" class="books zoom">
-                                </div>
-                                <p class="titleBook">Título</p>
-                                <ul class="ulInfo">
-                                    <li class="liAutor">Autor:
-                                        <div class="autorContent">
-                                            William Gibson
-                                        </div>
-                                    </li>
-                                    <li class="liAno">Ano:
-                                        <div class="anoContent">
-                                            2020
-                                        </div>
-                                    </li>
-                                </ul>
-                                <p class="txtInfo">
-                                    No futuro, existe a matrix. Uma espécie de alucinação coletiva digital
-                                    na qual a humanidade se conecta para, virtualmente, saber de tudo sobre tudo.
-                                    Mas há uma elite que navega por essa grande rede de informação – os cowboys.
-                                    Case era um deles, até o dia em que tentou ser mais esperto do que os seus patrões,
-                                    que fritaram suas conexões com o ciberespaço, tornando-o um pária entre os seus iguais.
-                                    Ele vaga pelos subúrbios de Tóquio, mais envolvido do que nunca em destruir a si próprio,
-                                    até ser contatado por Molly, uma bela e perigosa mulher que, assim como ele, desconfia
-                                    de tudo e de todos. Os dois acabam se envolvendo numa missão cheia de mistérios e perigos.
-                                </p>
-                                <button class="btnClose">Fechar</button>
-
-                            </div> -->
-
-                            <!-- <div class="bookUser">
-                                <div class="imgBook">
-                                    <img src="../images/imgPilhas/books/livro2.png" alt="" class="books booksHover">
-                                    <img src="../images/imgPilhas/eye.png" alt="" class="eye">
-                                </div>
-                                <p class="titleBook hiddenInfo">Título</p>
-                                <p class="txtInfo hiddenInfo">
-                                    No futuro, existe a matrix. Uma espécie de alucinação coletiva digital
-                                    na qual a humanidade se conecta para, virtualmente, saber de tudo sobre tudo.
-                                    Mas há uma elite que navega por essa grande rede de informação – os cowboys.
-                                    Case era um deles, até o dia em que tentou ser mais esperto do que os seus patrões,
-                                    que fritaram suas conexões com o ciberespaço, tornando-o um pária entre os seus iguais.
-                                    Ele vaga pelos subúrbios de Tóquio, mais envolvido do que nunca em destruir a si próprio,
-                                    até ser contatado por Molly, uma bela e perigosa mulher que, assim como ele, desconfia
-                                    de tudo e de todos. Os dois acabam se envolvendo numa missão cheia de mistérios e perigos.
-                                </p>
-                                <button class="btnClose hiddenInfo">Fechar</button> -->
-
-                            </div>
+                            <!-- Livros listados na prateleira aqui -->
                         </div>
                     </div>
                 </div>
@@ -186,6 +126,7 @@
         </div>
     </section>
 
+    <!-- Rodapé da página -->
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
             <path fill="#060429" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,58.7C480,64,600,128,720,160C840,
@@ -194,20 +135,18 @@
                     320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
+
+        <!-- Corpo do rodapé com logo, nome, citação e informações de direitos autorais -->
         <div class="footerBody">
             <img src="../images/logo.png" alt="logo" class="logoFooter">
-
             <h3 class="dataName">DATA VIEWER</h3>
             <p class="phrase">
                 - Woodrow Wilson <br>
                 "Eu não apenas uso todo o cérebro que tenho, <br> mas todos os que consigo pegar emprestado."
             </p>
             <small class="lastText">
-                &copy;Copyright 2023, Data Viewer. All rights reserved
+                &copy;Copyright 2023, Data Viewer. Todos os direitos reservados
             </small>
-
-        </div>
-
         </div>
     </footer>
 </body>

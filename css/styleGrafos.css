@@ -1,3 +1,7 @@
+body
+{
+    overflow: hidden;
+}
 .content
 {
     display: flex;
@@ -7,7 +11,7 @@
 
 .section1
 {
-    background-image: url('../images/bg6.png');
+    background-image: url('../images/imgGrafos/bg6.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
@@ -23,7 +27,6 @@
     flex-direction: column;
     margin-left: 5vh;
     width: 50%;
-    /* background: #000; */
 }
 
 .section1 h1
@@ -74,10 +77,8 @@
 .bgGod1
 {
     position: absolute;
-    weight: 50%;
     width: 50%;
     left: 50%;
     top: 48%;
     z-index: 0;
 }
-

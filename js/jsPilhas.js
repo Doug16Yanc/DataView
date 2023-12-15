@@ -1,3 +1,4 @@
+// Configurando varáveis referente ao DOM
 const btnVerLivros = document.querySelector('.botaoVerLivros');
 const hiddenMenuBooks = document.querySelector('.hiddenMenuBooks');
 const closeMenu = document.querySelector('.close');
@@ -7,7 +8,7 @@ const btnClose = document.querySelector('.btnClose');
 const divBooks = document.querySelector('.divBooks');
 const btnRemove = document.querySelector('.btnRemove');
 
-
+// Estrutura da lista de livros disponíveis
 const listBooks =  [
 
     {
@@ -390,158 +391,199 @@ const listBooks =  [
         pathFile : '../images/imgPilhas/books/livro16.png'
     },
 ]
-
+// Declaração de uma array vazia chamada userStack
 const userStack = [];
 
-const createAvailableList = (bookSrc, bookName) =>
-{
+// Função para criar um item na lista de livros disponíveis
+const createAvailableList = (bookSrc, bookName) => {
+    // Cria um elemento <div> para representar o conteúdo do livro
     const divBookContent = document.createElement('div');
     divBookContent.classList.add('bookContent');
 
+    // Cria uma imagem representando o menu do livro
     const imgBookMenu = document.createElement('img');
     imgBookMenu.classList.add('bookMenu', 'bookMenuHover');
     imgBookMenu.src = bookSrc;
 
+    // Cria um parágrafo para exibir o título do livro (inicialmente oculto)
     const pTitleBook = document.createElement('p');
     pTitleBook.classList.add('titleBookHidden');
     pTitleBook.textContent = bookName;
 
+    // Cria um botão "Adicionar" para o livro
     const buttonAdd = document.createElement('button');
     buttonAdd.classList.add('btnAdd');
-    buttonAdd.textContent = 'Adicionar'
+    buttonAdd.textContent = 'Adicionar';
 
+    // Adiciona os elementos criados à divBookContent
     divBookContent.appendChild(imgBookMenu);
     divBookContent.appendChild(pTitleBook);
     divBookContent.appendChild(buttonAdd);
-    contentHiddenMenu.appendChild(divBookContent);
-}
 
-listBooks.forEach((book) =>
-{
+    // Adiciona divBookContent ao elemento com ID contentHiddenMenu
+    contentHiddenMenu.appendChild(divBookContent);
+};
+
+// Itera sobre a lista de livros (listBooks) e chama a função createAvailableList para cada livro
+listBooks.forEach((book) => {
     createAvailableList(book.pathFile, book.title);
 });
 
-const createUserShelf = (srcBook, completeTitle, info, zIndex, id, authorName, yearBook) =>
-{
+// Função para criar um elemento que representa um livro na prateleira do usuário
+const createUserShelf = (srcBook, completeTitle, info, zIndex, id, authorName, yearBook, bookPages) => {
+    // Cria um elemento <div> para representar o livro na prateleira do usuário
     const divBookUser = document.createElement('div');
     divBookUser.classList.add('bookUser');
 
+    // Cria uma imagem do "olho" para visualizar informações do livro
     const imgEye = document.createElement('img');
     imgEye.classList.add('eye');
     imgEye.src = '../images/imgPilhas/eye1.png';
     imgEye.id = id;
 
+    // Cria um contêiner para a imagem do livro
     const divImgBook = document.createElement('div');
     divImgBook.classList.add('imgBook', 'books');
     divImgBook.id = id;
 
+    // Cria a imagem real do livro
     const imgBooks = document.createElement('img');
     imgBooks.classList.add('books', 'booksHover');
     imgBooks.src = srcBook;
     imgBooks.style.zIndex = zIndex;
     imgBooks.id = id;
 
+    // Cria uma lista não ordenada para exibir informações do livro (inicialmente oculta)
     const ulInfo = document.createElement('ul');
     ulInfo.classList.add('ulListInfo', 'hiddenInfo');
 
+    // Cria item da lista para exibir o autor do livro
     const liAutor = document.createElement('li');
     liAutor.classList.add('liAutor');
     liAutor.textContent = 'Autor:';
 
+    // Cria um contêiner para o conteúdo do autor
     const divAutorContent = document.createElement('div');
     divAutorContent.classList.add('autorContent');
-    divAutorContent.textContent = authorName
+    divAutorContent.textContent = authorName;
 
+    // Cria item da lista para exibir o ano do livro
     const liAno = document.createElement('li');
     liAno.classList.add('liAno');
     liAno.textContent = 'Ano:';
 
+    // Cria um contêiner para o conteúdo do ano do livro
     const divAnoContent = document.createElement('div');
     divAnoContent.classList.add('anoContent');
     divAnoContent.textContent = yearBook;
 
+    // Cria item da lista para exibir o número de páginas do livro
+    const liPag = document.createElement('li');
+    liPag.classList.add('liPag');
+    liPag.textContent = 'Páginas:';
+
+    // Cria um contêiner para o conteúdo do número de páginas do livro
+    const divPageContent = document.createElement('div');
+    divPageContent.classList.add('pageContent');
+    divPageContent.textContent = bookPages;
+
+    // Cria um título (<h2>) para o livro (inicialmente oculto)
     const h2Title = document.createElement('h2');
     h2Title.classList.add('titleBook', 'hiddenInfo');
     h2Title.textContent = completeTitle;
+    h2Title.id = id;
 
+    // Cria um parágrafo para exibir informações do livro (inicialmente oculto)
     const pTxtInfo = document.createElement('p');
     pTxtInfo.classList.add('txtInfo', 'hiddenInfo');
     pTxtInfo.textContent = info;
-    h2Title.id = id;
+    pTxtInfo.id = id;
 
+    // Cria um botão "Close" para fechar as informações do livro (inicialmente oculto)
     const btnClose = document.createElement('button');
     btnClose.classList.add('btnClose', 'hiddenInfo');
     btnClose.textContent = 'Close';
     btnClose.id = id;
 
+    // Adiciona conteúdo aos elementos criados
     liAutor.appendChild(divAutorContent);
     liAno.appendChild(divAnoContent);
-
-    ulInfo.appendChild(liAutor);    
-    ulInfo.appendChild(liAno);    
-
-    divImgBook.appendChild(imgBooks)
-    divImgBook.appendChild(imgEye)
+    liPag.appendChild(divPageContent);
+    ulInfo.appendChild(liAutor);
+    ulInfo.appendChild(liAno);
+    ulInfo.appendChild(liPag);
+    divImgBook.appendChild(imgBooks);
+    divImgBook.appendChild(imgEye);
     divImgBook.appendChild(ulInfo);
-
     divBookUser.appendChild(divImgBook);
     divBookUser.appendChild(h2Title);
     divBookUser.appendChild(pTxtInfo);
     divBookUser.appendChild(btnClose);
-    // divBookUser.appendChild(btnRemove);
 
-    // divBooks.appendChild(divBookUser);
+    // Retorna o elemento criado
     return divBookUser;
 }
-// listBooks.forEach((book, id) =>
-// {
-//     createUserShelf(book.pathFile, book.completeTitle, book.desc, id, id, book.author, book.year);
-// });
 
+// Configura a sobreposição (z-index) dos elementos na pilha do usuário
 const configureOverlay = (element) => {
+    // Atualiza o z-index de todos os elementos na pilha do usuário
     userStack.forEach((el, index) => {
         el.style.zIndex = index;
     });
 
+    // Define o z-index do elemento fornecido para estar no topo da pilha
     element.style.zIndex = userStack.length - 1;
 }
 
+// Adiciona um elemento à pilha do usuário
 const addBook = (stack, element) => {
+    // Adiciona o elemento à parte superior da pilha
     stack.unshift(element);
-
 }
 
+// Remove o elemento no topo da pilha do usuário
 const removeBook = (stack) => {
+    // Remove o elemento no topo da pilha
     stack.shift();
-    if (divBooks.firstChild)
-    {
+
+    // Remove o primeiro filho do elemento contêiner (divBooks) se existir
+    if (divBooks.firstChild) {
         divBooks.removeChild(divBooks.firstChild);
     }
 };
 
+// Define a visibilidade do botão de remoção com base na pilha do usuário
 const visibilityBtnRemove = () => {
-    if (userStack.length > 0)
-    {
+    // Verifica se há elementos na pilha do usuário
+    if (userStack.length > 0) {
+        // Remove a classe 'hiddenInfo' do botão de remoção se houver elementos na pilha
         btnRemove.classList.remove('hiddenInfo');
-    }
-    else
-    {
+    } else {
+        // Adiciona a classe 'hiddenInfo' ao botão de remoção se a pilha estiver vazia
         btnRemove.classList.add('hiddenInfo');
     }
-    console.log(`userStack.length: ${userStack.length}`)
-}
 
-let zIndexCounter = 0; // Variável para controlar o zIndex
+    // Exibe a quantidade de elementos na pilha no console
+    console.log(`userStack.length: ${userStack.length}`);
+}
+// Variável para controlar o zIndex
+let zIndexCounter = 0;
+
+// Seleciona todos os elementos com a classe 'bookMenu' e 'btnAdd'
 const bookMenu = [...document.querySelectorAll('.bookMenu')];
 const bntAdd = [...document.querySelectorAll('.btnAdd')];
+
+// Conjunto para rastrear livros adicionados
 const addedBooks = new Set();
+
+// Array para controle adicional
 let arrayControl = [];
 
+// Adiciona um ouvinte de evento de clique para cada botão de adição
 bntAdd.forEach((e, i) => {
-    e.addEventListener('click', () => { 
-        // Verificar se o elemento já foi adicionado
+    e.addEventListener('click', () => {
+        // Verifica se o livro já foi adicionado
         const title = listBooks[i].title;
-
         if (addedBooks.has(title)) {
             console.log('Livro já adicionado.');
             addedBooks.forEach((e) => {
@@ -549,27 +591,18 @@ bntAdd.forEach((e, i) => {
             });
             return;
         }
-        console.log(addedBooks);
 
-        userStack.forEach((book) => { 
-            console.log(`userStack: ${book}`);
-        });
-        arrayControl.forEach((book) => { 
-            console.log(`arrayControl: ${book}`);
-        });
-
-        // Adicionar o elemento à prateleira
-        const element = createUserShelf(listBooks[i].pathFile, listBooks[i].completeTitle, listBooks[i].desc, zIndexCounter, zIndexCounter, listBooks[i].author, listBooks[i].year);
-        addBook(userStack, title);
-        console.log(`userStack: ${userStack}`);
+        // Adiciona o livro à prateleira
+        const element = createUserShelf(listBooks[i].pathFile, listBooks[i].completeTitle, listBooks[i].desc, zIndexCounter, zIndexCounter, listBooks[i].author, listBooks[i].year, listBooks[i].pages);
+        addBook(userStack, element);
         divBooks.insertBefore(element, divBooks.firstChild);
 
-
-
-        // Adicionar o título à lista de livros adicionados
+        // Adiciona o título à lista de livros adicionados
         addedBooks.add(title);
         arrayControl.push(title);
+        zIndexCounter++;
 
+        // Seleciona os elementos recém-criados
         const bookUser = [...document.querySelectorAll('.bookUser')];
         const txtDesc = [...document.querySelectorAll('.txtInfo')];
         const titleBook = [...document.querySelectorAll('.bookUser .titleBook')];
@@ -577,18 +610,15 @@ bntAdd.forEach((e, i) => {
         const imgBook = [...document.querySelectorAll('.imgBook')];
         const books = [...document.querySelectorAll('.books.booksHover')];
         const getUlInfo = [...document.querySelectorAll('.ulListInfo')];
-        zIndexCounter++;
-        
         const eyeBook = [...document.querySelectorAll('.eye')];
-        
+
+        // Adiciona um ouvinte de evento de clique para cada ícone de olho
         eyeBook.forEach((e, i) => {
-            e.addEventListener('click', () => { 
-                console.log(bookUser[i])
+            e.addEventListener('click', () => {
+                console.log(bookUser[i]);
                 console.log(`Número do livro: ${i}`);
-                for (let j = 0; j < books.length; j++)
-                {
-                    if (books[j].id === e.id)
-                    {
+                for (let j = 0; j < books.length; j++) {
+                    if (books[j].id === e.id) {
                         bookUser[j].classList.add('info');
                         titleBook[j].classList.remove('hiddenInfo');
                         txtDesc[j].classList.remove('hiddenInfo');
@@ -603,10 +633,12 @@ bntAdd.forEach((e, i) => {
             });
         });
 
+        // Atualiza a visibilidade do botão de remoção
         visibilityBtnRemove();
 
-        btnCloseBook.forEach((e, j) => { 
-            e.addEventListener('click', () => { 
+        // Adiciona um ouvinte de evento de clique para cada botão de fechar
+        btnCloseBook.forEach((e, j) => {
+            e.addEventListener('click', () => {
                 bookUser[j].classList.remove('info');
                 titleBook[j].classList.add('hiddenInfo');
                 txtDesc[j].classList.add('hiddenInfo');
@@ -620,35 +652,39 @@ bntAdd.forEach((e, i) => {
         });
     });
 });
-
+// Função para remover o último livro da prateleira
 const removeLastBook = (stack) => {
     if (arrayControl.length > 0) {
-        const lastAddedTitle = arrayControl.pop(); // Remove o último título do arrayControl
+        // Remove o último título do arrayControl
+        const lastAddedTitle = arrayControl.pop();
         console.log(`lastAddedTitle: ${lastAddedTitle}`);
-        stack.pop();
 
-        // Remover o título do último livro do addedBooks
+        // Remove o último livro da prateleira (DOM) e do conjunto addedBooks
+        stack.pop();
         addedBooks.delete(lastAddedTitle);
 
-        // Remover apenas o último livro do DOM, se necessário
+        // Remove apenas o último livro do DOM, se necessário
         const lastAddedBookElement = divBooks.firstChild;
         if (lastAddedBookElement) {
             divBooks.removeChild(lastAddedBookElement);
         }
+
+        // Atualiza a visibilidade do botão de remoção
         visibilityBtnRemove();
     }
 };
 
+// Adiciona um ouvinte de evento de clique para o botão de remoção
 btnRemove.addEventListener('click', () => {
     removeLastBook(userStack);
 });
 
-btnVerLivros.addEventListener('click', () =>
-{ 
+// Adiciona um ouvinte de evento de clique para o botão 'Ver Livros'
+btnVerLivros.addEventListener('click', () => { 
     hiddenMenuBooks.classList.toggle('hidden');
-    
 });
-closeMenu.addEventListener('click', () =>
-{ 
+
+// Adiciona um ouvinte de evento de clique para o botão de fechar o menu
+closeMenu.addEventListener('click', () => { 
     hiddenMenuBooks.classList.toggle('hidden');
 });

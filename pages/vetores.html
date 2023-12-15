@@ -2,9 +2,14 @@
 <html lang="en">
 
 <head>
+    <!-- Configuração do documento HTML5 com codificação e viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
     <title>Vetor</title>
+
+    <!-- Links para arquivos externos de estilos CSS e scripts JavaScript -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styleNavbar.css">
     <link rel="stylesheet" href="../css/styleFooter.css">
@@ -14,27 +19,31 @@
 </head>
 
 <body>
+    <!-- Cabeçalho da página com logo, título e navegação -->
     <header>
         <div class="logoTitle">
-
-            <a href="#" class="logo"><img src="../images/logo.png" width="45px"></a>
+            <a href="../index.html" class="logo"><img src="../images/logo.png" width="45px"></a>
             <p class="titlePage">DATA VIEWER / VETORES</p>
         </div>
 
+        <!-- Menu de navegação -->
         <nav class="navbar hiddenMenu">
             <a href="../index.html">Home</a>
             <a href="#">Vetores</a>
-            <a href="listas.html">Listas</a>
-            <a href="pilhas.html">Pilhas</a>
-            <a href="filas.html">Filas</a>
-            <a href="heaps.html">Heaps</a>
-            <a href="arvores.html">Árvores</a>
-            <a href="hash.html">Hash Tabels</a>
-            <a href="grafos.html">Grafos</a>
+            <a href="../pages/listas.html">Listas</a>
+            <a href="../pages/pilhas.html">Pilhas</a>
+            <a href="../pages/filas.html">Filas</a>
+            <a href="../pages/heaps.html">Heaps</a>
+            <a href="../pages/arvores.html">Árvores</a>
+            <a href="../pages/hash.html">Hash Tables</a>
+            <a href="../pages/grafos.html">Grafos</a>
         </nav>
+
+        <!-- Ícone do menu -->
         <img src="../images/menu.png" alt="menu" class="menuIcon">
     </header>
 
+    <!-- Seção de conteúdo principal -->
     <section class="content">
         <div class="section1">
             <div class="leftSide">
@@ -42,90 +51,25 @@
                     VETORES
                 </h1>
                 <p class="msgInicial">
-                    Um vetor é uma coleção de elementos, onde cada elemento possui um índice único. Esses índices geralmente
+                    Um vetor é uma coleção de elementos, onde cada elemento possui um índice único. Esses índices
+                    geralmente
                     começam em zero, e os elementos podem possuir qualquer valor, porém todos devem ser do mesmo tipo.
                     Podemos usar de exemplo os jogos de RPG. Todos são jogos diferentes, mas pertencem a um mesmo tipo.
                 </p>
-
             </div>
-
         </div>
 
         <div class="section2">
             <div class="contentSides">
-
-                    
                 <div class="rightSide2">
                     <div class="listContent">
-        
                         <div class="listBox">
-                            <div class="itemBoxExample">
-                                <span class="nameExample">0</span>
-                                <img src="../images/imgVetores/diablo.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    El Diablo
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">1</span>
-                                <img src="../images/imgVetores/divinity.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    Divinity
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">2</span>
-                                <img src="../images/imgVetores/stardew.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    Stardew Valey
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">3</span>
-                                <img src="../images/imgVetores/theElder.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    Elder Ring
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">4</span>
-                                <img src="../images/imgVetores/warcraft.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    Warcraft
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">5</span>
-                                <img src="../images/imgVetores/witcher.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    The Witcher
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">6</span>
-                                <img src="../images/imgVetores/dark.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    Dark Souls
-                                </h2>
-                            </div>
-        
-                            <div class="itemBoxExample">
-                                <span class="nameExample">7</span>
-                                <img src="../images/imgVetores/disco.jpg" alt="img list" class="itemList">
-                                <h2>
-                                    Disco Elysium
-                                </h2>
-                            </div>
+                            <!-- Lista de exemplos aqui -->
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="leftSide2">
                 <h1>
                     Geralt de Rívia
@@ -135,32 +79,31 @@
                     Se você pegá-lo, e deixá-lo sem tratamento, ele pode consumir você.”
                 </p>
             </div>
+
             <div class="geralt">
                 <img src="../images/imgVetores/Geralt_of_Rivia.png" alt="" class="bgGeralt">
             </div>
-            <button type="button" class="botaoVerGames">Ver jogos disponiveis</button>
+
+            <button type="button" class="botaoVerGames">Ver jogos disponíveis</button>
+
             <div class="listBox2">
-                <!-- <div class="userGames">
-                    
+                <h2 class="txtVetor">VETOR DE GAMES</h2>
+                <hr />
+                <div class="userGames">
+                    <!-- Lista de jogos do vetor aqui -->
                 </div>
-                -->
-            </div> 
+            </div>
+
             <div class="menuTitulos hiddenSideAvailable">
                 <div class="containerAvailable">
                     <h1 class="nossosGames">NOSSOS GAMES</h1>
-            
-                    <!-- <div class="itemBox">
-                        <img class="itemList listAvailable" src="../images/imgVetores/diablo.jpg" alt="">
-                        <span class="name">El Diablo</span>
-                        <button class="btnAdicionar">Adicionar</button>
-                    </div> -->
-            
+                    <!-- Menu de games disponíveis aqui -->
                 </div>
             </div>
-            
-                
-        </section>
+        </div>
+    </section>
 
+    <!-- Rodapé da página -->
     <footer>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
             <path fill="#060429" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,58.7C480,64,600,128,720,160C840,
@@ -169,9 +112,9 @@
                     320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
+
         <div class="footerBody">
             <img src="../images/logo.png" alt="logo" class="logoFooter">
-
             <h3 class="dataName">DATA VIEWER</h3>
             <p class="phrase">
                 - Woodrow Wilson <br>
@@ -179,11 +122,8 @@
                 mas todos os que consigo pegar emprestado."
             </p>
             <small class="lastText">
-                &copy;Copyright 2023, Data Viewer. All rights reserved
+                &copy;Copyright 2023, Data Viewer. Todos os direitos reservados
             </small>
-
-        </div>
-
         </div>
     </footer>
 </body>
