@@ -2,112 +2,187 @@
 <html lang="en">
 
 <head>
+    <!-- Configuração básica do documento -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Heaps</title>
+
+    <!-- Links para os estilos e scripts utilizados na página -->
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styleNavbar.css">
     <link rel="stylesheet" href="../css/styleFooter.css">
     <link rel="stylesheet" href="../css/styleHeaps.css">
-    <script src="../js/jsNavbar.js" defer></script>
-    <script src="../js/jsVetores.js" defer></script>
+    <script defer src="../js/jsNavbar.js"></script>
+    <script defer src="../js/jsHeaps.js"></script>
 </head>
+
 <body>
-    <!-- Menu -->
+    <!-- Cabeçalho da página -->
     <header>
         <div class="logoTitle">
-
-            <a href="#" class="logo"><img src="../images/logo.png" width="45px"></a>
+            <!-- Logo e título da página -->
+            <a href="../index.html" class="logo"><img src="../images/logo.png" width="45px"></a>
             <p class="titlePage">DATA VIEWER / HEAPS</p>
         </div>
 
+        <!-- Barra de navegação -->
         <nav class="navbar hiddenMenu">
             <a href="../index.html">Home</a>
-            <a href="vetores.html">Vetores</a>
-            <a href="listas.html">Listas</a>
-            <a href="pilhas.html">Pilhas</a>
-            <a href="filas.html">Filas</a>
-            <a href="heaps.html">Heaps</a>
-            <a href="arvores.html">Árvores</a>
-            <a href="hash.html">Hash Tabels</a>
-            <a href="grafos.html">Grafos</a>
+            <a href="../pages/vetores.html">Vetores</a>
+            <a href="../pages/listas.html">Listas</a>
+            <a href="../pages/pilhas.html">Pilhas</a>
+            <a href="../pages/filas.html">Filas</a>
+            <a href="#">Heaps</a>
+            <a href="../pages/arvores.html">Árvores</a>
+            <a href="../pages/hash.html">Hash Tables</a>
+            <a href="../pages/grafos.html">Grafos</a>
         </nav>
+
+        <!-- Ícone do menu para dispositivos móveis -->
         <img src="../images/menu.png" alt="menu" class="menuIcon">
     </header>
-<!-- primeira seção-->
-    <section class="content">
-        <div class="section1">
+
+    <!-- Conteúdo principal -->
+    <main class="content">
+        <!-- Seção 1 da página -->
+        <section class="section1">
             <div class="leftSide">
-                <h1 class="pageTitle">
-                    HEAPS
-                </h1>
+                <!-- Título e descrição sobre árvores -->
+                <h1 class="title">HEAPS</h1>
                 <p class="msgInicial">
-                    Um heap é uma estrutura de dados em forma de árvore que mantém uma propriedade específica: 
-                    em um heap máximo, cada nó é maior ou igual aos seus filhos, e em um heap mínimo, cada nó é 
-                    menor ou igual aos seus filhos. Heaps são árvores binárias completas e eficientes para encontrar 
-                    e remover o elemento máximo ou mínimo. 
+                    Um heap é uma estrutura de dados em forma de árvore que mantém uma propriedade específica:
+                    em um heap máximo, cada nó é maior ou igual aos seus filhos, e em um heap mínimo, cada nó
+                    é menor ou igual aos seus filhos. Heaps são árvores binárias completas e eficientes para
+                    encontrar e remover o elemento máximo ou mínimo. Como ideia de heap, pense no roadmap
+                    do desenvolvedor de software, começa-se por um heap mínimo (a força de vontade), então temos
+                    as escolhas de domínio (backend, frontend e mobile), nesses domínios, temos os nós filhos destes
+                    que são as hard skills (técnicas e habilidades práticas).
                 </p>
-
             </div>
 
-            <img src="../images/imgHeaps/tecnologia-blockchain_94937-320-removebg-preview.png" alt="">
-
-      
+            <!-- Imagem associada à descrição -->
             <div class="rightSide">
-            <!--   <div class="sliderList">
-                 explicação sobre o exodia
-                </div> -->
+                <img src="../images/imgHeaps/woman.png" alt="" class="imgRightSide">
             </div>
-        </div>
+        </section>
 
-<!-- Parte 2-->
-        <div class="section2">  
-            <div class="colunaEsquerda" >
-                <!-- cartas -->
-                <div class="exodia-container">
-                    <div class="linha1">
-                <!---       <div id="card1">
-                           <img class="exodia-card" src="../images/imgHeaps/card1.png">
-                        </div>
-                    </div>
-                        <div class="linha2">
-                            <div id="card2">
-                                <img class="exodia-card"  src="../images/imgHeaps/card2.png">
-                            </div>
-                            <div id="card3">
-                                <img class="exodia-card" src="../images/imgHeaps/card3.png">
-                            </div>
-                        </div>
-                        <div class="linha3">
-                            <div id="card4">
-                                <img class="exodia-card" src="../images/imgHeaps/card4.png">
-                            </div>
-                            <div id="card5">
-                                <img  class="exodia-card" src="../images/imgHeaps/card5.png">
-                            </div> -->
-                        </div>
-                    </div>
+        <!-- Seção 2 da página -->
+        <section class="section2">
+            <div class="contentTree">
+              
+                <!-- Nó principal -->
+                <button class="mainNode btnNode">
+                    Desenvolvedor
+                </button>
+
+                <!-- Primeira classe de ramos -->
+                <button class="branch1 backend btnNode">
+                    Backend
+                </button>
+                <button class="branch1 front btnNode">
+                    Frontend
+                </button>
+                <button class="branch1 mobile btnNode">
+                    Mobile
+                </button>
+
+                <!-- Segunda classe de ramos -->
+                <button class="branch2 logica btnNode backendBranch">
+                    Lógica, linguagens e paradigmas de programação
+                </button>
+                <button class="branch2 paradigmas btnNode backendBranch">
+                    Bancos de dados, sistemas operacionais, microsserviços, contêineres, APIs,
+                    controle de versionamento, computação em nuvem, código em camadas
+                </button>
+                <button class="branch2 design btnNode frontBranch">
+                   Tecnologias Web
+                </button>
+                <button class="branch2 web btnNode frontBranch">
+                     UIX Design/Marcadores web
+                </button>
+                <button class="branch2 android btnNode mobileBranch">
+                    Android
+                </button>
+                <button class="branch2 iphone btnNode mobileBranch">
+                    iOS
+                </button>
+
+                <!-- Terceira classe de ramos -->
+             <button class="branch3 backend1  btnNode back1Branch">
+                    Algoritmos, estrutura de dados, programação orientada a objetos, programação funcional,
+                    padrões de projeto, frameworks e bibliotecas
+                </button>
+               <!-- <button class="branch3 backend1 btnNode back1Branch">
+                    Java, Python
+                </button> -->
+                <button class="branch3 backend2 btnNode back2Branch">
+                    PostgreSQL, MySQL, MongoDB, Windows, Linux, maCOS, Cloud, Docker, Kubernetes,
+                    Postman, Insomnia, Rest, GraphQL, SOAP, JSON-RPC, XML-RPC, WebSocketAPI
+                </button>
+                <button class="branch3 figma btnNode design1">
+                   Figma, Canva, Wix, Ionos 
+                </button>
+                <button class="branch3 html btnNode design1">
+                    HTML, CSS, SASS, XML, Ajax, Json
+                </button>
+                <button class="branch3 js btnNode web1">
+                    JavaScript, React, Angular, Vue
+                </button>
+                <button class="branch3 jet btnNode web1">
+                    Jetpack Compose, Kotlin Multiplatform
+                </button> 
+                <button class="branch3 nativeI btnNode iphoneMobile">
+                   React Native, Flutter, Kotlin, C#
+                </button>
+                <button class="branch3 adapI btnNode iphoneMobile">
+                     Swift, Objective-C
+                </button>
+                <button class="branch3 native btnNode androidMobile">
+                    Java/Kotlin/Flutter
+                </button>
+                <button class="branch3 adap btnNode androidMobile">
+                    React Native/Ionic
+                </button>
+
+                <div class="line l1H tectopToB1"></div>
+                <div class="line l1V tectopToB1"></div>
+                <div class="line l2H tectopToB1"></div>
+                <div class="line l2V tectopToB1"></div>
+                <div class="line l3V tectopToB1"></div>
+                <div class="line l4H mobileToB2"></div>
+                <div class="line l5H androidToB3"></div>
+                <div class="line l5V androidToB3"></div>
+                <div class="line l6V androidToB3"></div>
+                <div class="line l7V mobileToB2"></div>
+                <div class="line l8V iphoneToB3"></div>
+                <div class="line l9V iphoneToB3"></div>
+                <div class="line l9H iphoneToB3"></div>
+                <div class="line l10V frontToB2"></div>
+                <div class="line l10H frontToB2"></div>
+                <div class="line l11V frontToB2"></div>
+                <div class="line l11H frontToB2"></div>
+                <div class="line l12V designToB3"></div>
+                <div class="line l12H designToB3"></div>
+                <div class="line l13V designToB3"></div>
+                <div class="line l14V backendToB2"></div>
+                <div class="line l15H backendToB2"></div>
+                <div class="line l16V backend1ToB3"></div>
+                <div class="line l16H backend1ToB3"></div>
+                <div class="line l17H backend2ToB3"></div>
+                <div class="line l17V backend2ToB3"></div>
+                <div class="line l18V backend1ToB3"></div>
+                <div class="line l19V backend1ToB3"></div>
+                <div class="line l20V webToB3"></div>
+                <div class="line l20H webToB3"></div>
+                <div class="line l21H webToB3"></div>
+                <div class="line l22V webToB3"></div>
             </div>
+        </section>
+    </main>
 
-        <!-- Yugi -->
-            <div class="colunaDireita">
-                <div class="catchphrase">
-                  <!--     <h1 id="autor">
-                            Yugi Muta
-                        </h1>
-                            <p id="frase">
-                                “A raiva bloqueia o raciocínio de momentos que deveriamos agir com bravura.”
-                            </p>  -->
-                    </div>
-                        <div class="yugi">
-                    <img src="../images/imgHeaps/so.png" alt="" class="bgYugi">
-                </div>
-            </div>
-    </div>  
-
-</section>
-
+    <!-- Rodapé da página -->
     <footer>
+        <!-- Elemento SVG para criar uma onda no rodapé -->
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="wave">
             <path fill="#060429" fill-opacity="1" d="M0,160L60,133.3C120,107,240,53,360,58.7C480,64,600,128,720,160C840,
                     192,960,192,1080,170.7C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,
@@ -115,21 +190,25 @@
                     320C240,320,120,320,60,320L0,320Z">
             </path>
         </svg>
+
+        <!-- Corpo do rodapé -->
         <div class="footerBody">
+            <!-- Logo do rodapé -->
             <img src="../images/logo.png" alt="logo" class="logoFooter">
 
+            <!-- Nome da aplicação -->
             <h3 class="dataName">DATA VIEWER</h3>
+
+            <!-- Citação no rodapé -->
             <p class="phrase">
                 - Woodrow Wilson <br>
-                "Eu não apenas uso todo o cérebro que tenho, <br>
-                mas todos os que consigo pegar emprestado."
+                "Eu não apenas uso todo o cérebro que tenho, <br> mas todos os que consigo pegar emprestado."
             </p>
+
+            <!-- Texto de direitos autorais -->
             <small class="lastText">
                 &copy;Copyright 2023, Data Viewer. All rights reserved
             </small>
-
-        </div>
-
         </div>
     </footer>
 </body>
