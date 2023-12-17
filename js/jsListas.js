@@ -98,7 +98,7 @@ startSliderAnimation(); // Chamando a função para iniciar a animação do slid
 
 // Definindo uma lista de objetos chamada movies, onde cada objeto representa um filme com várias propriedades
 const movies = [
-    {
+        {
         id : 1,
         bg : '../images/imgListas/list/astra-bg.png',
         completeTitle: 'Ad Astra: Rumo às Estrelas',
@@ -279,11 +279,11 @@ const movies = [
     },
     {
         id : 10,
-        bg : '../images/imgListas/list/blade.jpg',
+        bg : '../images/imgListas/list/blade-bg.png',
         completeTitle : 'Blade Runner - O caçador de androides',
         year : '(1982)',
         name : 'Blade Runner',
-        pathFile : '../images/imgListas/list/blade.jpg',
+        pathFile : '../images/imgListas/list/blade.png',
         desc : `
                 No início do século XXI, uma grande corporação desenvolve um robô que é mais 
                 forte que o ser humano e se equiparando em inteligência. São conhecidos como
@@ -298,11 +298,11 @@ const movies = [
     },
     {
         id : 11,
-        bg : '../images/imgListas/list/robocop.jpg',
+        bg : '../images/imgListas/list/robocop-bg.png',
         completeTitle : 'Robocop - O Policial do Futuro',
         year : '(1987)',
         name : 'Robocop',
-        pathFile : '../images/imgListas/list/robocop.jpg',
+        pathFile : '../images/imgListas/list/robocop.png',
         desc : `
                 Depois de ter sido mortalmente ferido em cerco a marginais, 
                 policial (Peter Weller) transformado num misto de máquina e 
@@ -315,11 +315,11 @@ const movies = [
     },
     {
         id : 12,
-        bg : '../images/imgListas/list/machina.jpg',
+        bg : '../images/imgListas/list/machina-bg.png',
         completeTitle : 'Ex Machina - Instinto Artificial',
         year : '(2015)',
         name : 'Ex Machina',
-        pathFile : '../images/imgListas/list/machina.jpg',
+        pathFile : '../images/imgListas/list/machina.png',
         desc : `
             Dirigido por Alex Garland, o suspense apresenta Caleb (Domhnall Gleeson), um jovem desenvolvedor
             de software que ganha um concurso na empresa onde trabalha para passar um final de semana na 
@@ -331,11 +331,11 @@ const movies = [
     },
     {
         id : 13,
-        bg : '../images/imgListas/list/interestellar.jpg',
+        bg : '../images/imgListas/list/interestellar-bg.png',
         completeTitle : 'Interestelar',
         year : '(2013)',
         name : 'Interestelar',
-        pathFile : '../images/imgListas/list/interestellar.jpg',
+        pathFile : '../images/imgListas/list/interestellar.png',
         desc : `
                 O longa de Christopher Nolan apresenta uma terra inóspita onde todos os recursos 
                 se esgotaram, desse modo, um grupo de astronautas recebe a missão de verificar 
@@ -348,11 +348,11 @@ const movies = [
     },
     {
         id : 14,
-        bg : '../images/imgListas/list/wall.jpg',
+        bg : '../images/imgListas/list/wall-bg.png',
         completeTitle : 'Wall-e',
         year : '(2008)',
         name : 'Wall-e',
-        pathFile : '../images/imgListas/list/wall.jpg',
+        pathFile : '../images/imgListas/list/wall.png',
         desc : `
                 Wall-e (2008) é uma animação da Disney e da Pixar, de 97 minutos. Esse filme, cujo roteiro e direção 
                 foram feitos por Andrew Stanton. O filme se inicia no ano de 2700, tendo como cenário principal o nosso 
@@ -366,21 +366,19 @@ const movies = [
                 esperando a conclusão de tal trabalho para retornarem ao nosso planeta; mas acabam ficando aproximadamente
                 700 anos. Para verificar se a Terra já está habitável, a empresa envia robôs para lá, sendo um deles a Eva
                 (Examinadora de Vegetação Alienígena), que se apaixonará pelo personagem principal (e vice-versa).
-
-
             `
     },
     {
         id : 15,
-        bg : '../images/imgListas/list/ely.jpg',
+        bg : '../images/imgListas/list/elysium-bg.png',
         completeTitle : 'Elysium',
         year : '(2013)',
         name : 'Elysium',
-        pathFile : '../images/imgListas/list/ely.jpg',
+        pathFile : '../images/imgListas/list/ely.png',
         desc : `
                 No ano de 2159, existem duas classes de pessoas: os ricos e abastados, 
                 que vivem numa estação espacial chamada Elysium, e o resto, que vive numa 
-                Terra arruinada e superpopulada. A Secretária Rhodes (Jodie Foster), uma 
+                Terra arruinada e superpopulosa. A Secretária Rhodes (Jodie Foster), uma 
                 oficial durona do governo, fará de tudo para garantir que as leis anti-imigração 
                 sejam obedecidas à risca, para preservar o luxuoso estilo de vida dos cidadãos de Elysium. 
                 Isso não impedirá o povo da Terra de tentar entrar, de qualquer forma possível. 
@@ -393,11 +391,11 @@ const movies = [
     
     {
         id : 16,
-        bg : '../images/imgListas/list/matrix.jpg',
+        bg : '../images/imgListas/list/matrix-bg.png',
         completeTitle : 'The Matrix',
         year : '(1999)',
         name : 'The Matrix',
-        pathFile : '../images/imgListas/list/matrix.jpg',
+        pathFile : '../images/imgListas/list/matrix.png',
         desc : `
                 Em um futuro próximo, Thomas Anderson (Keanu Reeves), um jovem programador que 
                 mora em um cubículo escuro é atormentado por sonhos estranhos nos quais encontra-se
@@ -408,17 +406,15 @@ const movies = [
                 um mundo real enquanto usa os cérebros e corpos das pessoas para produzir energia. Morpheus, 
                 entretanto, acredita que Thomas é Neo, o aguardado messias que será capaz de enfrentar a Matrix
                 e conduzir de volta as pessoas à realidade e à liberdade. 
-
-
             `
     },
     {
         id : 17,
-        bg : '../images/imgListas/list/gravity.jpg',
+        bg : '../images/imgListas/list/gravity-bg.png',
         completeTitle : 'Gravidade',
         year : '(2013)',
         name : 'Gravidade',
-        pathFile : '../images/imgListas/list/gravity.jpg',
+        pathFile : '../images/imgListas/list/gravity.png',
         desc : `
                 Matt Kowalski (George Clooney) é um astronauta experiente que está em missão de conserto 
                 ao telescópio Hubble juntamente com a doutora Ryan Stone (Sandra Bullock). Ambos são 
@@ -426,16 +422,15 @@ const movies = [
                 míssil russo, que faz com que sejam jogados no espaço sideral. Sem qualquer apoio da base 
                 terrestre da NASA, eles precisam encontrar um meio de sobreviver em meio a um ambiente
                 completamente inóspito para a vida humana.
-
             `
     },
     {
         id : 18,
-        bg : '../images/imgListas/list/exterminator.jpg',
+        bg : '../images/imgListas/list/exterminator-bg.png',
         completeTitle : 'Schwarzenegger - O Exterminador do Futuro',
         year : '(1984)',
-        name : 'O Exterminador do Futuro',
-        pathFile : '../images/imgListas/list/exterminator.jpg',
+        name : 'O Exterminador',
+        pathFile : '../images/imgListas/list/exterminator.png',
         desc : `
                 Num futuro próximo, a guerra entre humanos e máquinas foi deflagrada. 
                 Com a tecnologia a seu dispor, um plano inusitado é arquitetado pelas
@@ -444,28 +439,26 @@ const movies = [
                 transformar num líder e seu pior inimigo. Contudo, os humanos também 
                 conseguem enviar um representante (Michael Biehn) para proteger a mulher 
                 e tentar garantir o futuro da humanidade.
-
             `
     },
-   
-    {
-    id : 19,
-    bg : '../images/imgListas/list/future.jpg',
-    completeTitle : 'De Volta para o Futuro',
-    year : '(1985)',
-    name : 'De Volta para o Futuro',
-    pathFile : '../images/imgListas/list/future.jpg',
-    desc : `
-            Dirigida por  Robert Zemeckis e estrelada por Michael J. Fox e Christopher Lloyd. 
-            O protagonista Marty McFly (Michael J. Fox) aciona acidentalmente uma máquina do
-            tempo construída pelo cientista Doc Brown (Christopher Lloyd) em um Delorean,
-            retornando aos anos 1950, onde conhece sua mãe antes do casamento com seu pai,
-            que se apaixona por ele. Tal eventualidade colocaria em risco sua própria
-            existência, pois seria pelos paradoxos de causalidade, isso o força a servir
-                de cupido entre seus pais.
-        `
-}
 
+    {
+        id : 19,
+        bg : '../images/imgListas/list/future-bg.png',
+        completeTitle : 'De Volta para o Futuro',
+        year : '(1985)',
+        name : 'De Volta para o Futuro',
+        pathFile : '../images/imgListas/list/future.png',
+        desc : `
+                Dirigida por  Robert Zemeckis e estrelada por Michael J. Fox e Christopher Lloyd. 
+                O protagonista Marty McFly (Michael J. Fox) aciona acidentalmente uma máquina do
+                tempo construída pelo cientista Doc Brown (Christopher Lloyd) em um Delorean,
+                retornando aos anos 1950, onde conhece sua mãe antes do casamento com seu pai,
+                que se apaixona por ele. Tal eventualidade colocaria em risco sua própria
+                existência, pois seria pelos paradoxos de causalidade, isso o força a servir
+                    de cupido entre seus pais.
+            `
+    }
 ]
 
 // Seleciona o elemento HTML com a classe 'containerAvailable' usando o método querySelector
@@ -980,6 +973,13 @@ let selectedElement = null;
 // Adiciona um ouvinte de evento de clique à listBox
 listBox.addEventListener('click', (event) =>
 { 
+    const subdomain = window.location.hostname.split('.')[0]; // Obtem a primeira parte do dominio da página
+    const pathArray = window.location.pathname.split('/'); // Obtem o caminho da URL atual da página da web em que o script está sendo executado. 
+    const repository = pathArray[1]; // Armazena o nome do repositório, que estar na segunda posição do array
+    console.log(`pathArray: ${pathArray}`);
+    console.log(`repository: ${repository}`);
+    console.log(`subdomain: ${subdomain}`);
+
     // Verifica se o clique ocorreu em um elemento com a classe 'classUserList'
     if (event.target.classList.contains('classUserList'))
     {
@@ -1006,66 +1006,77 @@ listBox.addEventListener('click', (event) =>
             selectedElement = itemBox;
         }
 
-        // Itera sobre os filmes para encontrar o correspondente ao item clicado
-        /*
-        for (let i = 0; i < movies.length; i++)
+        if (subdomain === '127') // Caso esteja rodando localmente a primeira parte do dominio da página retornará 127
         {
-            let url = movies[i].pathFile;
-            let itemBoxSrc = itemBox.src;
-            let relativeItemBox = new URL(itemBoxSrc, window.location.origin).pathname;
-            let relativeUrl = new URL(url, window.location.origin).pathname;
-
-            // Verifica se a URL do filme corresponde à URL do item clicado
-            if (relativeUrl === relativeItemBox) {
-                // Atualiza os elementos na página com informações do filme
-                titleSelected.innerHTML = movies[i].completeTitle;
-                description.innerHTML = movies[i].desc;
-                yearSelected.innerHTML = movies[i].year;
-                bgList.src = movies[i].bg;
-
-                // Adiciona ou remove classes para animações
-                bgList.classList.toggle('bgListAnimation');
-                boxDesc.classList.toggle('animationBoxDesc');
-
-                console.log("Elemento clicado!");
-            }
-        }
-        */
-        
-        //*********************** This Section is for Github Pages. Uncomment if Necessary ***********************
-        for (let i = 0; i < movies.length; i++)
-        {
-            let url = movies[i].pathFile;
-            let itemBoxSrc = itemBox.src
-            let relativeItemBox = new URL(itemBoxSrc, window.location.origin).pathname
-            let relativeUrl = new URL(url, window.location.origin).pathname
-
-            let convertURL = `/View-Data-Structure${relativeUrl.toString()}`;
-            let convertItemBox = relativeItemBox.toString();
-            console.log(`itemBox.src: ${itemBoxSrc}`);
-            console.log(`url: ${url}`);
-            console.log(`RelativeItemBox: ${relativeItemBox}`)
-            console.log(`Relative url: ${relativeUrl}`);
-            console.log(`convertURL: ${convertURL}`);
-            console.log(`convertItemBox ${convertItemBox}`);
-            if (convertURL == convertItemBox)
+            // Itera sobre os filmes para encontrar o correspondente ao item clicado                
+            for (let i = 0; i < movies.length; i++)
             {
-                titleSelected.innerHTML = '';
-                description.innerHTML = '';
-                src = movies[i].bg;
-
-                titleSelected.innerHTML = movies[i].completeTitle;
-                
-                description.innerHTML = movies[i].desc
-                yearSelected.innerHTML = movies[i].year;
-                // console.log(bgList);
-                bgList.src = src;  
-                console.log("Elemento clicado!");
-                bgList.classList.toggle('bgListAnimation');
-                boxDesc.classList.toggle('animationBoxDesc');
+                let url = movies[i].pathFile;
+                let itemBoxSrc = itemBox.src;
+                let relativeItemBox = new URL(itemBoxSrc, window.location.origin).pathname;
+                let relativeUrl = new URL(url, window.location.origin).pathname;
+    
+                // Verifica se a URL do filme corresponde à URL do item clicado
+                if (relativeUrl === relativeItemBox) {
+                    console.log(`itemBox.src: ${itemBoxSrc}`);
+                    console.log(`url: ${url}`);
+                    console.log(`RelativeItemBox: ${relativeItemBox}`)
+                    console.log(`Relative url: ${relativeUrl}`);
+                    // Atualiza os elementos na página com informações do filme
+                    titleSelected.innerHTML = movies[i].completeTitle;
+                    description.innerHTML = movies[i].desc;
+                    yearSelected.innerHTML = movies[i].year;
+                    bgList.src = movies[i].bg;
+    
+                    // Adiciona ou remove classes para animações
+                    bgList.classList.toggle('bgListAnimation');
+                    boxDesc.classList.toggle('animationBoxDesc');
+    
+                    console.log("Elemento clicado!");
+                }
             }
         }
-        //*********************** This Section is for Github Pages. Uncomment if Necessary ***********************
+        else // Case o retorno seja diferente de 127 significa que o site estar rodando no GitHub pages
+        {
+            // Mesma função do trecho acima
+            for (let i = 0; i < movies.length; i++)
+            {
+                let url = movies[i].pathFile;
+                let itemBoxSrc = itemBox.src
+                let relativeItemBox = new URL(itemBoxSrc, window.location.origin).pathname
+                let relativeUrl = new URL(url, window.location.origin).pathname
+    
+                let convertURL = `/${repository + relativeUrl.toString()}`; // Obtem o nome do repositório para fazer o caminho correto dos arquivos
+                let convertItemBox = relativeItemBox.toString();
+    
+                if (convertURL == convertItemBox)
+                {
+                    console.log(`convertURL: ${convertURL}`);
+                    console.log(`convertItemBox: ${convertItemBox}`);
+    
+                    console.log(`itemBox.src: ${itemBoxSrc}`);
+                    console.log(`url: ${url}`);
+                    console.log(`RelativeItemBox: ${relativeItemBox}`)
+                    console.log(`Relative url: ${relativeUrl}`);
+                    console.log(`convertURL: ${convertURL}`);
+                    console.log(`convertItemBox ${convertItemBox}`);
+
+                    titleSelected.innerHTML = '';
+                    description.innerHTML = '';
+                    src = movies[i].bg;
+    
+                    titleSelected.innerHTML = movies[i].completeTitle;
+                    
+                    description.innerHTML = movies[i].desc
+                    yearSelected.innerHTML = movies[i].year;
+                    // console.log(bgList);
+                    bgList.src = src;  
+                    console.log("Elemento clicado!");
+                    bgList.classList.toggle('bgListAnimation');
+                    boxDesc.classList.toggle('animationBoxDesc');
+                }
+            }
+        }
     }
 });
 

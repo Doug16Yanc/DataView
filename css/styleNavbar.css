@@ -1,7 +1,6 @@
 
 header
 {
-    position : absolute;
     top : 0;
     left : 0;
     right : 0;
@@ -10,7 +9,7 @@ header
     display : flex;
     align-items : center;
     justify-content: space-between;
-    box-shadow: var(--box-shadow);
+    box-shadow: 1vh 0 2vh #0000008a;
     z-index: 999;
 }
 

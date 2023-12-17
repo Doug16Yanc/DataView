@@ -30,25 +30,23 @@ body
 .section1 h1
 {
     position: relative;
-    margin-top: 9vh;
-    margin-left: 3.5vh;
+    margin-top: 10vh;
+    font-size: max(25px, 2.5vh);
     padding: 1vh 5vh;
-    font-size: 3vh;
     width: fit-content;
-    background: #0819b8;
+    background: #0c0479;
     border-radius: 1vh;
-    font-size: min(30px, 1.6vh);
 }
 
 .section1 p
 {
     position: relative;
-    left: -5vh;
     font-size: min(25px, 2vh);
     width: 110%;
+    margin-top: 5vh;
     padding: 3vh;
     border-radius: 3vh;
-    background: #00000079;
+    background: #00000086;
 }
 
 @media (max-width: 320px)
@@ -170,7 +168,7 @@ body
 
 .title2
 {
-    font-size: 2.5vh;
+    font-size: max(20px, 2vh);
     background: #0a2945;
     text-align: right;
     width: 100%;
@@ -184,7 +182,7 @@ body
 {
     background: linear-gradient(#00000000, #000000);
     box-shadow: 7px 8px 5px #000;
-    font-size: 23px;
+    font-size: max(20px, 2vh);
     margin-left: 5vh;
     width: 37vh;
     height: auto;
@@ -420,7 +418,7 @@ body
     background: #0A2945;
     margin: auto 0;
     padding: 1.5vh 8vh;
-    font-size: max(25px, 1vh);
+    font-size: max(18px, 2vh);
     width: 35vh;
     height: fit-content;
     border-top-right-radius: 12vh;
@@ -432,7 +430,7 @@ body
     display: flex;
     position: relative;
     width: 30vh;
-    font-size: max(20px, 1.8vh);
+    font-size: max(18px, 2vh);
     height: fit-content;
     padding: 2vh 3vh;
     text-align: left;
@@ -624,10 +622,11 @@ body
     height: 50vh;
     position: absolute;
     align-items: center;
+    text-align: center;
     justify-content: center;
     margin: auto;
     padding-top: 6vh;
-    left: 60%;
+    left: 58%;
     bottom: 100%;
     z-index: 999;
     border-radius: 3vh;
@@ -635,7 +634,6 @@ body
     overflow: auto;
     transition: 1s;
     transform: translateX(0%);
-    transition: 1s;
 }
 
 .hiddenSideAvailable
@@ -712,7 +710,7 @@ body
 
 .desc
 {
-    font-size: max(27px, 1vh);
+    font-size: max(18px, 2vh);
 }
 
 .name
